@@ -20,7 +20,7 @@ body {
 a {
   font-weight: normal;
   text-decoration: none; 
-  color:#EF6D3D;
+  color:#63524b;
 }
 a:focus {
   outline: thin dotted;
@@ -93,16 +93,15 @@ blockquote p:last-child {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(background.jpg) center center no-repeat fixed;
-  background-size:cover;
+  background:#1A2A3A
 }
 body {
   max-width:800px;
   margin:25px auto;
 }
 header, #content, footer { 
-  background: rgba(0,0,0,.8); 
-  padding:25px;
+  background: #1A2A3A; 
+  padding:15px;
   color:#FFFFFF; 
 }
 
@@ -119,15 +118,17 @@ ul.main-menu li a {
   margin-right:20px;
   font-size:2.0rem;
   border-bottom: solid transparent 3px;
-  color:#cfd2da;
+  color:#00CED1;
+  font-family: 'Georgia', serif;
 }
 ul.main-menu li a:hover {
   color:#FFFFFF;
 }
 ul.main-menu li a.active {
   color:#FFFFFF;
-  border-bottom-color:#EF6D3D;
+  border-bottom-color:#948c89;
 }
+
 
 /* Utility classes */
 .hide {
@@ -135,6 +136,39 @@ ul.main-menu li a.active {
 }
 .show {
   display:block;
+}
+
+.img-container {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding-top: 20px;
+}
+
+.img-to-crop {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+li.links :hover
+{
+  color: #e7d8d1;
+}
+
+a.links
+{
+  color: #20B2AA;
+}
+
+p
+{
+  color:#F0F0F0;
+  font-family: 'Georgia', serif;
 }
 
 
