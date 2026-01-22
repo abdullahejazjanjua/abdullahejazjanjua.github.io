@@ -6,7 +6,7 @@ subtitle: Talent is a pursued interest. Anything that you're willing to practice
 
 profile:
   align: right
-  image: prof_pic.jpeg
+  image: profile_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Ghulam Ishaq Khan Institute of Engineering Sciences and Technology</p>
