@@ -26,8 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a third-year Computer Science undergraduate at the Ghulam Ishaq Khan Institute of Engineering Sciences and Technology. My research focuses on computer vision where I explore what is required to make machines perceive the world?.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Previously, I was an Undergraduate Researcher at the Intelligent Machines Lab where I was advised by Dr. Waqas Sultani. My research focused on improving the generalizability of DETR-based models to unseen target domains by incorporating Discrete Fourier Transform with model features. I also helped develop an unsupervised adaptation framework for microscopy images using Monte Carlo Dropout for uncertainty-aware pseudo-labeling
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+When I am away from the keyboard, I am an avid reader of manhwa, light novels, and fictional books. I also spend my time exploring narrative-rich worlds in video games like Red Dead Redemption 2, The Witcher, and Ghost of Tsushima. I have a particular fondness for the colors black and blue, which often reflects in my personal aesthetic.
