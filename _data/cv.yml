@@ -2,13 +2,13 @@
   type: map
   contents:
     - name: Full Name
-      [cite_start]value: Abdullah Ejaz Janjua [cite: 2]
+      value: Abdullah Ejaz Janjua
     - name: Email
-      [cite_start]value: janjuaae@gmail.com [cite: 2]
-    - name: Programming Languages
-      [cite_start]value: Python, C, C++, SQL, HTML, CSS [cite: 51]
-    - name: Frameworks & Tools
-      [cite_start]value: PyTorch, Flask, Bootstrap, Git, Docker, LaTeX [cite: 52, 53]
+      value: janjuaae@gmail.com
+    - name: Languages
+      value: Python, C, C++, SQL, HTML, CSS
+    - name: Frameworks
+      value: PyTorch, Flask, Bootstrap
 
 - title: Education
   type: time_table
@@ -17,11 +17,14 @@
       institution: Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI), Topi, Pakistan
       year: Sep. 2023 - June 2027
       description:
-        - [cite_start]CGPA: 3.80/4.00 [cite: 3]
-        - title: Coursework
+        - title: University Courses
           contents:
-            - [cite_start]Object-Oriented Programming, Data Structures & Algorithms, Linear Algebra, Statistics, Calculus I [cite: 56]
-            - [cite_start]Machine Learning Specialization (Andrew Ng), CS231n Deep Learning (Fei-Fei Li), Computer Vision (Andreas Geiger) [cite: 57]
+            - Object-Oriented Programming, Data Structures & Algorithms, Linear Algebra, Statistics, Calculus I
+        - title: Self-Study
+          contents:
+            - Machine Learning Specialization (Prof. Andrew Ng)
+            - CS231n Deep Learning for Visual Recognition (Prof. Fei-Fei Li)
+            - Computer Vision (Prof. Andreas Geiger)
 
 - title: Experience
   type: time_table
@@ -30,65 +33,64 @@
       institution: Intelligent Machines Lab, Information Technology University, Lahore, Pakistan
       year: June 2025 - Nov 2025
       description:
-        - [cite_start]Investigated methods to improve DETR-based models' generalizability to unseen target domains under Dr. Waqas Sultani[cite: 10].
-        - [cite_start]Proposed incorporating Discrete Fourier Transform (DFT) with model features, improving mAP@50 from 34.1 to 38.7 on the Leukemia Attri dataset[cite: 11].
-        - [cite_start]Converted findings into a comprehensive academic paper[cite: 12].
+        - Worked under the guidance of Dr. Waqas Sultani on Domain Generalization for DETR-based models.
+        - Proposed incorporating Discrete Fourier Transform (DFT) with model features, improving generalization on the Leukemia Attri dataset.
+        - Converted findings into a comprehensive academic paper.
 
     - title: Research Intern
       institution: Intelligent Machines Lab, Information Technology University, Lahore, Pakistan
       year: Jan 2025 - Feb 2025
       description:
-        - [cite_start]Developed an Unsupervised Domain Adaptation (UDA) framework for microscopy images with source-target domain transfer[cite: 16].
-        - [cite_start]Proposed integration of Monte Carlo Dropout (MCD) for uncertainty-aware pseudo-labeling and confidence image-mixing[cite: 17].
-        - [cite_start]Assisted in writing, running, and designing experiments[cite: 18].
+        - Developed an Unsupervised Domain Adaptation (UDA) framework for microscopy images.
+        - Proposed and helped integrate Monte Carlo Dropout (MCD) for uncertainty-aware pseudo-labeling.
+        - Assisted in designing and running experiments.
 
     - title: Artificial Intelligence Intern
       institution: Ghulam Ishaq Khan Institute of Engineering Sciences and Technology, Topi, Pakistan
       year: Sep 2024 - Jan 2025
       description:
-        - [cite_start]Developed and implemented object detection and segmentation algorithms for weapon identification under Dr. Khurram Khan Jadoon[cite: 22].
-        - [cite_start]Designed and executed a detection algorithm for Foreign Object Detection (FoD A)[cite: 23].
-        - [cite_start]Created and manually annotated a comprehensive weapon dataset for training high-performance segmentation models[cite: 24].
-        - [cite_start]Achieved competitive performance compared to industry benchmarks in security applications[cite: 25].
+        - Developed object detection and segmentation algorithms for weapon identification under Dr. Khurram Khan Jadoon.
+        - Designed and executed a detection algorithm for Foreign Object Detection (FoD A).
+        - Created and manually annotated a comprehensive weapon dataset for training segmentation models.
 
 - title: Open Source Projects
   type: time_table
   contents:
     - title: Weapon Detection and Segmentation
       year: 2024
-      description: 
-        - [cite_start]Designed a system for detecting and segmenting weapons using YOLOv8, achieving mAP@50 of 0.84 after hyperparameter tuning[cite: 43, 44, 48].
-        - [cite_start]Created segmentation masks using Roboflow and explored depth effects by modifying C2f layers[cite: 46, 47].
+      description:
+        - Designed a system for detecting and segmenting weapons using YOLOv8, achieving mAP@50 of 0.84.
+        - Created segmentation masks using Roboflow and explored depth effects by modifying C2f layers.
 
     - title: DINOv1 implementation for ResNet
       year: 2024
-      description: 
-        - [cite_start]Implemented DINOv1 training pipeline for ResNet models for self-supervised feature learning[cite: 39].
-        - [cite_start]Developed a finetuning pipeline for classification tasks and enabled seamless CLI training[cite: 40, 41].
+      description:
+        - Implemented DINOv1 training pipeline for ResNet models for self-supervised feature learning.
+        - Developed a finetuning pipeline to adapt the pre-trained model for classification tasks.
 
     - title: Vision Transformer (ViT) Implementation
       year: 2024
-      description: 
-        - [cite_start]Implemented ViT architecture from scratch (multi-head self-attention, positional encoding, patch embedding)[cite: 33, 34].
-        - [cite_start]Achieved 70.66% accuracy on PascalVOC2012 without pretraining or tuning[cite: 36].
+      description:
+        - Implemented Vision Transformer architecture from scratch in PyTorch (multi-head self-attention, positional encoding).
+        - Validated implementation on PascalVOC2012, achieving 70.66% accuracy without pretraining.
 
     - title: ResNet Implementation
       year: 2024
-      description: 
-        - [cite_start]Implemented ResNet-50, 101, and 152 from scratch using PyTorch[cite: 28, 29].
-        - [cite_start]Achieved 88.44% accuracy on CardDataset without hyperparameter tuning[cite: 31].
+      description:
+        - Implemented ResNet architecture (50, 101, 152) from scratch using PyTorch.
+        - Achieved 88.44% accuracy on a simple CardDataset without hyperparameter tuning.
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2023 - Present
-      items: 
-        - [cite_start]Dean's Honor Roll (High Distinction, SGPA ≥ 3.75) for all semesters[cite: 59].
+      items:
+        - Dean's Honor Roll (High Distinction) for all semesters.
     - year: 2023
       items:
-        - [cite_start]Awarded shield for highest marks obtained in HSSC[cite: 60].
+        - Awarded shield for highest marks obtained in HSSC.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Narrative-rich video games (RDR2, Witcher, Ghost of Tsushima), Reading (Manhwa, Light Novels, Fiction).
+    - <u>Hobbies:</u> Narrative-rich games (RDR2, Witcher, Ghost of Tsushima), Reading (Manhwa, Light Novels, Fiction).
