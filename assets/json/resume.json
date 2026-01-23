@@ -1,200 +1,249 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Abdullah Ejaz Janjua",
+    "label": "Computer Science Undergraduate",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "janjuaae@gmail.com",
+    "phone": "",
+    "url": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Topi",
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "Abdullah Ejaz Janjua",
+        "url": "https://www.linkedin.com/in/abdullah-ejaz-janjua/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Abdullah Ejaz Janjua",
+        "url": "https://github.com/abdullahejazjanjua/abdullahejazjanjua."
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Intelligent Machines Lab, Information Technology University",
+      "position": "Undergraduate Researcher",
+      "url": "",
+      "startDate": "2025-06-01",
+      "endDate": "2025-11-01",
+      "location": "Lahore, Pakistan",
+      "summary": "Worked under the guidance of Dr. Waqas Sultani on Domain Generalization.",
+      "highlights": [
+        "Investigated methods to improve DETR-based models' generalizability to unseen target domains.",
+        "Proposed incorporating Discrete Fourier Transform (DFT) with model features, improving generalization from 34.1 to 38.7 mAP@50 on the Leukemia Attri dataset.",
+        "Converted findings into a comprehensive academic paper."
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Intelligent Machines Lab, Information Technology University",
+      "position": "Research Intern",
+      "url": "",
+      "startDate": "2025-01-01",
+      "endDate": "2025-02-01",
+      "location": "Lahore, Pakistan",
+      "summary": "Collaborated with Dr. Waqas Sultani's research group on microscopy image analysis.",
+      "highlights": [
+        "Helped develop an Unsupervised Domain Adaptation (UDA) framework for microscopy images with source-target domain transfer.",
+        "Proposed and integrated Monte Carlo Dropout (MCD) for uncertainty-aware pseudo-labeling and confidence image-mixing.",
+        "Assisted in writing and designing experiments."
+      ]
+    },
+    {
+      "name": "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology",
+      "position": "Artificial Intelligence Intern",
+      "url": "",
+      "startDate": "2024-09-01",
+      "endDate": "2025-01-01",
+      "location": "Topi, Pakistan",
+      "summary": "Worked under the guidance of Dr. Khurram Khan Jadoon on security applications.",
+      "highlights": [
+        "Developed and implemented object detection and segmentation algorithms for weapon identification.",
+        "Designed and executed a detection algorithm for Foreign Object Detection (FoD A).",
+        "Created and manually annotated a comprehensive weapon dataset for training high-performance segmentation models.",
+        "Achieved competitive performance compared to industry benchmarks."
+      ]
     }
   ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology",
+      "location": "Topi, Pakistan",
+      "url": "",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2023-09-01",
+      "endDate": "2027-06-01",
+      "score": "3.80/4.00",
+      "courses": [
+        "Object-Oriented Programming",
+        "Data Structures & Algorithms",
+        "Linear Algebra",
+        "Statistics",
+        "Linear Algebra II",
+        "Calculus I"
+      ]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Dean's Honor Roll",
+      "date": "2023-09-01",
+      "awarder": "GIKI",
+      "url": "",
+      "summary": "Achieved High Distinction for all semesters so far (SGPA ≥ 3.75)."
+    },
+    {
+      "title": "Academic Excellence Shield",
+      "date": "2023-01-01",
+      "awarder": "College",
+      "url": "",
+      "summary": "Awarded shield for highest marks obtained in HSSC."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Machine Learning Specialization",
+      "date": "",
+      "issuer": "Prof. Andrew Ng",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "CS231n: Deep Learning for Visual Recognition",
+      "date": "",
+      "issuer": "Prof. Fei-Fei Li",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Computer Vision",
+      "date": "",
+      "issuer": "Prof. Andreas Geiger",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "CS50x: Introduction to Computer Science",
+      "date": "",
+      "issuer": "Prof. David Malan",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
     }
   ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
+  "publications": [],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Languages",
+      "level": "Proficient",
+      "icon": "fa-solid fa-code",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "C",
+        "C++",
+        "SQL",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "Proficient",
+      "icon": "fa-solid fa-layer-group",
+      "keywords": [
+        "PyTorch",
+        "Flask",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name": "Developer Tools",
+      "level": "Proficient",
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "keywords": [
+        "Git",
+        "VS Code",
+        "Jupyter Notebook",
+        "IntelliJ"
+      ]
+    },
+    {
+      "name": "Libraries",
+      "level": "Proficient",
+      "icon": "fa-solid fa-book",
+      "keywords": [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "OpenCV",
+        "Scikit-learn"
       ]
     }
   ],
   "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
     {
       "language": "English",
       "fluency": "Fluent",
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
+  "interests": [],
+  "references": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "ResNet Implementation",
+      "summary": "Implemented ResNet architecture from scratch using PyTorch.",
+      "highlights": [
+        "Built multiple ResNet variants (ResNet-50, 101, 152) with configurable depth and block types.",
+        "Trained and validated on image classification datasets to verify correctness.",
+        "Achieved 88.44% accuracy on CardDataset without hyperparameter tuning."
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "url": ""
+    },
+    {
+      "name": "Vision Transformer (ViT) Implementation",
+      "summary": "Implemented Vision Transformer architecture from scratch in PyTorch based on the original paper.",
+      "highlights": [
+        "Built multi-head self-attention mechanism, positional encoding, and patch embedding layers.",
+        "Implemented transformer encoder blocks with layer normalization and feed-forward networks.",
+        "Achieved 70.66% accuracy on PascalVOC2012 without pretraining or hyperparameter tuning."
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "url": ""
+    },
+    {
+      "name": "DINOv1 Implementation for ResNet",
+      "summary": "Implemented DINOv1 training pipeline for ResNet models for self-supervised learning.",
+      "highlights": [
+        "Enabled self-supervised feature learning without labels.",
+        "Developed a finetuning pipeline to adapt the pre-trained model for classification tasks.",
+        "Implemented CLI support for seamless training."
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "url": ""
+    },
+    {
+      "name": "Weapon Detection with YOLOv8",
+      "summary": "Designed a system for detecting and segmenting weapons in images.",
+      "highlights": [
+        "Worked with a small dataset (100 images) and explored model modifications (C2f layers).",
+        "Created segmentation masks using Roboflow.",
+        "Achieved an improved mAP@50 of 0.84 after hyperparameter tuning."
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "url": ""
     }
   ]
 }

@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a third-year Computer Science undergraduate at the Ghulam Ishaq Khan Institute of Engineering Sciences and Technology. My research focuses on computer vision where I explore what is required to make machines perceive the world?.
+I am a third-year Computer Science undergraduate at the Ghulam Ishaq Khan Institute of Engineering Sciences and Technology. My work focuses on computer vision where I explore what is required to make machines perceive the world?.
 
 Previously, I was an Undergraduate Researcher at the Intelligent Machines Lab where I was advised by Dr. Waqas Sultani. My research focused on improving the generalizability of DETR-based models to unseen target domains by incorporating Discrete Fourier Transform with model features. I also helped develop an unsupervised adaptation framework for microscopy images using Monte Carlo Dropout for uncertainty-aware pseudo-labeling
 
