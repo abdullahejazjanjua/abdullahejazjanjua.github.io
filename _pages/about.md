@@ -28,7 +28,7 @@ latest_posts:
 
 I am a third-year Computer Science undergraduate at the Ghulam Ishaq Khan Institute of Engineering Sciences and Technology. My work focuses on computer vision where I explore what is required to make machines perceive the world?.
 
-Currently, I serve as a Teaching Assistant at GIK Institute for the Spring 2026 semester. Working under Dr. Taj Khan in the Verilog Lab, I mentor a cohort of 50 students in mastering digital logic and Verilog HDL. My role involves facilitating technical problem-solving, conducting vivas, and suggesting pedagogical improvements to lab materials to enhance student comprehension. I also recently led a three-day Linux Lab Tutorial, helping students build foundational proficiency with the terminal.
+Currently, I serve as a Teaching Assistant at GIK Institute for the Spring 2026 semester. Working under Dr. Taj Khan in the Verilog Lab, I mentor a cohort of 50 students in mastering digital logic and Verilog HDL. My role involves facilitating technical problem-solving, conducting vivas, and suggesting improvements to lab materials to enhance student comprehension. I also recently led a three-day Linux Lab Tutorial, helping students build foundational proficiency with the terminal.
 
 Previously, I was an Undergraduate Researcher at the Intelligent Machines Lab where I was advised by Dr. Waqas Sultani. My research focused on improving the generalizability of DETR-based models to unseen target domains by incorporating Discrete Fourier Transform with model features. I also helped develop an unsupervised adaptation framework for microscopy images using Monte Carlo Dropout for uncertainty-aware pseudo-labeling
 
