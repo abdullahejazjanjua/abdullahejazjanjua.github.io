@@ -6,91 +6,116 @@
     - name: Email
       value: janjuaae@gmail.com
     - name: Languages
-      value: Python, C, C++, SQL, HTML, CSS
-    - name: Frameworks
-      value: PyTorch, Flask, Bootstrap
+      value: Python, C, C++, CUDA-C, SQL, HTML, CSS
+    - name: Libraries & Tools
+      value: NumPy, Pandas, Matplotlib, OpenCV, scikit-learn, PyTorch
 
 - title: Education
   type: time_table
   contents:
-    - title: Bachelor of Science in Computer Science
+    - title: Bachelor of Science in Computer Science (CGPA: 3.78/4.00)
       institution: Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI), Topi, Pakistan
       year: Sep. 2023 - June 2027
       description:
         - title: University Courses
           contents:
-            - Object-Oriented Programming, Data Structures & Algorithms, Linear Algebra, Statistics, Calculus I
+            - Object-Oriented Programming, Data Structures & Algorithms, GPU Programming, Operating Systems, Linear Algebra, Linear Algebra II, Statistics, Calculus I
         - title: Self-Study
           contents:
+            - CS50x: Introduction to Computer Science (Prof. David Malan)
             - Machine Learning Specialization (Prof. Andrew Ng)
-            - CS231n Deep Learning for Visual Recognition (Prof. Fei-Fei Li)
+            - CS231n: Deep Learning for Visual Recognition (Prof. Fei-Fei Li)
             - Computer Vision (Prof. Andreas Geiger)
+            - Diffusion Models (Prof. Stefano Ermon)
 
 - title: Experience
   type: time_table
   contents:
+    - title: Mitacs Global Research Intern
+      institution: Carleton University, Ottawa, Canada
+      year: June 2026 - Present
+      description:
+        - Awarded a fully funded Mitacs Globalink Research Internship to conduct research under the supervision of Dr. Junfeng Wen.
+        - Adapting pre-trained diffusion models along the temporal axis to model continuous facial aging while preserving identity consistency.
+        - Conducting comparative experiments against existing generative baselines to assess trade-offs between synthesis realism and temporal identity retention.
+
+    - title: Teaching Assistant
+      institution: Ghulam Ishaq Khan Institute of Engineering Sciences and Technology, Topi, Pakistan
+      year: January 2026 - May 2026
+      description:
+        - Assisting 40+ students in the Verilog Lab under Dr. Taj Khan by troubleshooting digital logic and HDL programming errors.
+        - Led a 3-day Linux Lab Tutorial focused on terminal operations, shell navigation, and command-line workflows.
+        - Identified areas where students required more time and proposed schedule modifications to the professor to ensure better comprehension.
+        - Conducted technical vivas to verify students' understanding.
+
     - title: Undergraduate Researcher
       institution: Intelligent Machines Lab, Information Technology University, Lahore, Pakistan
-      year: June 2025 - Nov 2025
+      year: June 2025 - November 2025
       description:
-        - Worked under the guidance of Dr. Waqas Sultani on Domain Generalization for DETR-based models.
-        - Proposed incorporating Discrete Fourier Transform (DFT) with model features, improving generalization on the Leukemia Attri dataset.
+        - Worked under the guidance of Dr. Waqas Sultani on Domain Generalization, specifically investigating methods to improve DETR-based models' generalizability to unseen target domains.
+        - Improved generalization of the model from 34.1 to 38.7 mAP@50 on the Leukemia Attri dataset by proposing incorporating Discrete Fourier Transform (DFT) with model features.
         - Converted findings into a comprehensive academic paper.
 
     - title: Research Intern
       institution: Intelligent Machines Lab, Information Technology University, Lahore, Pakistan
       year: Jan 2025 - Feb 2025
       description:
-        - Developed an Unsupervised Domain Adaptation (UDA) framework for microscopy images.
-        - Proposed and helped integrate Monte Carlo Dropout (MCD) for uncertainty-aware pseudo-labeling.
-        - Assisted in designing and running experiments.
+        - Worked with Dr. Waqas Sultani's research group, where I helped develop an Unsupervised Domain Adaptation (UDA) framework for microscopy images with source-target domain transfer.
+        - Proposed and helped with integration of Monte Carlo Dropout (MCD) for uncertainty-aware pseudo-labeling and confidence image-mixing.
+        - Assisted in writing, running experiments and designing experiments.
 
     - title: Artificial Intelligence Intern
       institution: Ghulam Ishaq Khan Institute of Engineering Sciences and Technology, Topi, Pakistan
       year: Sep 2024 - Jan 2025
       description:
-        - Developed object detection and segmentation algorithms for weapon identification under Dr. Khurram Khan Jadoon.
+        - Worked under the guidance of Dr. Khurram Khan Jadoon, where I developed and implemented object detection and segmentation algorithms for weapon identification.
         - Designed and executed a detection algorithm for Foreign Object Detection (FoD A).
-        - Created and manually annotated a comprehensive weapon dataset for training segmentation models.
+        - Created and manually annotated a comprehensive weapon dataset for training high-performance segmentation models.
+        - Achieved competitive performance compared to industry benchmarks in security applications.
 
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: Weapon Detection and Segmentation
-      year: 2024
+    - title: "TinyTorch: Custom C++/CUDA Deep Learning Framework"
+      year: 2025 - 2026
       description:
-        - Designed a system for detecting and segmenting weapons using YOLOv8, achieving mAP@50 of 0.84.
-        - Created segmentation masks using Roboflow and explored depth effects by modifying C2f layers.
+        - Developed a C++ deep learning framework from scratch with Python bindings (pybind11), featuring a custom DAG-based autograd engine utilizing topological sort for backpropagation.
+        - Engineered custom CUDA kernels for 2D Convolutions (forward and transposed backward passes), Linear layers, and GAP, utilizing shared memory tiling and 1D stride loops to manage memory coalescing.
+        - Built a specialized, fused Softmax-Cross Entropy kernel that executed faster than PyTorch's generalized equivalent.
+        - Trained a custom Conv-ReLU-Conv-Linear architecture on the MNIST dataset using a custom SGD optimizer and manual GPU memory management, achieving 95% test accuracy in 20 minutes.
 
-    - title: DINOv1 implementation for ResNet
+    - title: "Generative AI: VAE & RealNVP"
+      year: 2025
+      description:
+        - Implemented a Variational Autoencoder (VAE) to study latent variable models and probabilistic image generation.
+        - Built a RealNVP flow-based model utilizing affine coupling layers for exact density estimation and efficient sampling.
+        - Analyzed manifold learning and generative capabilities through latent space visualization and reconstruction metrics.
+
+    - title: Self-Supervised Learning (DINOv1)
       year: 2024
       description:
-        - Implemented DINOv1 training pipeline for ResNet models for self-supervised feature learning.
+        - Implemented the DINOv1 training pipeline for ResNet models, enabling self-supervised feature learning without labels.
         - Developed a finetuning pipeline to adapt the pre-trained model for classification tasks.
+        - Utilized clear coding practices, allowing for seamless training of the model from the CLI without modifying code.
 
-    - title: Vision Transformer (ViT) Implementation
+    - title: "Foundational CV Architectures: ViT & ResNet"
       year: 2024
       description:
-        - Implemented Vision Transformer architecture from scratch in PyTorch (multi-head self-attention, positional encoding).
-        - Validated implementation on PascalVOC2012, achieving 70.66% accuracy without pretraining.
-
-    - title: ResNet Implementation
-      year: 2024
-      description:
-        - Implemented ResNet architecture (50, 101, 152) from scratch using PyTorch.
-        - Achieved 88.44% accuracy on a simple CardDataset without hyperparameter tuning.
+        - Implemented Vision Transformer (ViT) and ResNet (50, 101, 152) architectures from scratch in PyTorch, adhering to original research specifications.
+        - Engineered core components including multi-head self-attention, positional encoding, patch embeddings, and residual skip connections.
+        - Validated models on PascalVOC2012 and CardDataset, achieving 70.66% and 88.44% accuracy respectively without pre-training or hyperparameter tuning.
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2023 - Present
       items:
-        - Dean's Honor Roll (High Distinction) for all semesters.
+        - Dean's Honor Roll (High Distinction) for all semesters (SGPA >= 3.75).
     - year: 2023
       items:
-        - Awarded shield for highest marks obtained in HSSC.
+        - Awarded shield for highest marks obtained in HSSC in college.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Narrative-rich games (RDR2, Witcher, Ghost of Tsushima), Reading (Manhwa, Light Novels, Fiction).
+    - "<u>Hobbies:</u> Narrative-rich games (RDR2, Witcher, Ghost of Tsushima), Reading (Manhwa, Light Novels, Fiction)."
