@@ -30,4 +30,4 @@ I am a final-year Computer Science undergraduate at the Ghulam Ishaq Khan Instit
 
 Currently, I am a Mitacs Globalink Research Intern at Carleton University advised by Dr. Junfeng Wen, where I work on adapting pre-trained diffusion models along the temporal axis to model continuous facial aging. Prior to this, I conducted research at the Intelligent Machines Lab under Dr. Waqas Sultani on domain generalization for DETR architectures and unsupervised domain adaptation for microscopy imaging. Alongside my research, I actively explore systems-level performance, which includes developing TinyTorch, a custom C++/CUDA deep learning framework with handcrafted, fused GPU kernels and an autograd engine from scratch.
 
-When I am away from the keyboard, I read manhwa, light novels, and fiction, and spend time playing narrative-driven video games like Red Dead Redemption 2, The Witcher, and Ghost of Tsushima.
+When I am away from the keyboard, I read manga, manhwa (there are NOT same) , light novels, and spend time playing narrative-driven video games like Red Dead Redemption 2, The Witcher, and Ghost of Tsushima.
