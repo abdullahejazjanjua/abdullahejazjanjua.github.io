@@ -595,6 +595,8 @@ achievements:
 
 Descriptions support Markdown formatting. Entries appear beneath the About text as academic honor records with fine separators and optional year labels, in list order.
 
+The `year` field also accepts date ranges such as `"2023–present"`. All achievement content is edited in the Markdown file; the layout is handled automatically.
+
 ## Adding workstation specs
 
 The Workstation area appears beneath the profile location on the main page. Edit `workstation` in [\_pages/about.md](_pages/about.md), replacing `machines: []` with your machine entries:
@@ -617,6 +619,8 @@ workstation:
 ```
 
 Add or remove spec fields freely; each field is displayed in the order listed. The profile location text and destination are configured with `profile.location` and `profile.location_url` in the same file.
+
+The profile image/contact details and workstation appear in separate cards. Change the image using `profile.image`, or update machines and specs using `workstation.machines`; no template or style edits are required.
 
 ## Managing publication display
 

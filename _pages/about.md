@@ -22,13 +22,15 @@ workstation:
 selected_papers: False # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
-# Copy an entry to add an achievement. The year is optional; descriptions support Markdown.
+# Copy an entry to add an achievement. year accepts a year or range (e.g. 2023–present).
+# Descriptions support Markdown. No HTML or CSS edits are needed.
 achievements:
   - title: Mitacs Globalink Research Internship
     year: "2026"
     description: >-
       Selected for the competitive, fully funded Mitacs Globalink Research Internship to conduct research on diffusion models and subject personalization at Carleton University, Canada, under Dr. Junfeng Wen.
   - title: Academic Excellence — GIKI
+    year: "2023–present"
     description: >-
       Achieved a CGPA of 3.78/4.00, ranking 4th among 41 students in my class and 13th among 631 students in my batch. Earned Dean's Honor Roll Distinction in every semester to date.
 

@@ -316,8 +316,24 @@ ul.task-list input[type="checkbox"] {
       overflow-wrap: anywhere;
     }
 
-    .workstation {
-      border-top-color: var(--global-rule-color);
+    .profile-card,
+    .workstation-card {
+      border: 1px solid var(--global-rule-color);
+      border-radius: 4px;
+      background-color: var(--global-card-bg-color);
+    }
+
+    .profile-card {
+      padding: 0.75rem;
+
+      figure {
+        margin: 0;
+      }
+    }
+
+    .workstation-card {
+      margin-top: 1rem;
+      padding: 1rem;
     }
   }
 
@@ -347,7 +363,7 @@ ul.task-list input[type="checkbox"] {
 
   .achievement-entry {
     display: grid;
-    grid-template-columns: 4rem minmax(0, 1fr);
+    grid-template-columns: 6.5rem minmax(0, 1fr);
     gap: 1.5rem;
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--global-rule-color);
@@ -357,6 +373,7 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-accent-color);
     font-size: 0.875rem;
     font-variant-numeric: tabular-nums;
+    white-space: nowrap;
     line-height: 1.7;
   }
 

@@ -18,40 +18,42 @@ layout: default
     <div class="about-intro">
       {% if page.profile %}
         <div class="profile about-profile">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid rounded' %}
+          <div class="profile-card">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: 701px) 214px, (max-width: 280px) 80vw, 214px{% endcapture %}
+              {%
+                include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+                cache_bust=true
+              %}
             {% endif %}
-            {% capture sizes %}(min-width: 701px) 240px, (max-width: 280px) 90vw, 240px{% endcapture %}
-            {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-              cache_bust=true
-            %}
-          {% endif %}
-          {% if site.data.socials.email or page.profile.location or page.profile.more_info %}
-            <div class="more-info">
-              {% if site.data.socials.email %}
-                <p>
-                  <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email | escape }}</a>
-                </p>
-              {% endif %}
-              {% if page.profile.location %}
-                <p>
-                  {% if page.profile.location_url %}
-                    <a href="{{ page.profile.location_url | escape }}">{{ page.profile.location | escape }}</a>
-                  {% else %}
-                    {{ page.profile.location | escape }}
-                  {% endif %}
-                </p>
-              {% endif %}
-              {{ page.profile.more_info }}
-            </div>
-          {% endif %}
+            {% if site.data.socials.email or page.profile.location or page.profile.more_info %}
+              <div class="more-info">
+                {% if site.data.socials.email %}
+                  <p>
+                    <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email | escape }}</a>
+                  </p>
+                {% endif %}
+                {% if page.profile.location %}
+                  <p>
+                    {% if page.profile.location_url %}
+                      <a href="{{ page.profile.location_url | escape }}">{{ page.profile.location | escape }}</a>
+                    {% else %}
+                      {{ page.profile.location | escape }}
+                    {% endif %}
+                  </p>
+                {% endif %}
+                {{ page.profile.more_info }}
+              </div>
+            {% endif %}
+          </div>
           {% if page.workstation %}
-            <section class="workstation" aria-labelledby="workstation-title">
+            <section class="workstation workstation-card" aria-labelledby="workstation-title">
               <h2 id="workstation-title">Workstation</h2>
               {% for machine in page.workstation.machines %}
                 <div class="workstation-machine">
