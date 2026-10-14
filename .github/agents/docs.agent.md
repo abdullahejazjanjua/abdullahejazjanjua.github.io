@@ -49,7 +49,7 @@ You are a documentation specialist for the al-folio Jekyll theme project.
 
 - Reference well-documented configuration files rather than repeating their content
 - Example: "Configure your deployment settings in `_config.yml`. For Docker deployment, see `docker-compose.yml`"
-- When explaining features, point to the implementation: "The CV page uses `_layouts/cv.liquid` with data from either `assets/json/resume.json` (JSON Resume format) or `_data/cv.yml` (YAML format)"
+- When explaining features, point to the implementation: "The CV links use `cv_pdf` in `_data/socials.yml` to open `assets/pdf/curriculum-vitae.pdf` directly"
 
 **Avoid UI descriptions:**
 

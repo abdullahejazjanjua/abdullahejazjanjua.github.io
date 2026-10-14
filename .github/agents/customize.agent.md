@@ -132,11 +132,10 @@ npx prettier . --write
 
 ### 4. CV/Resume
 
-**Files:** `assets/json/resume.json` OR `_data/cv.yml`
+**Files:** `assets/pdf/curriculum-vitae.pdf`, `_data/socials.yml`
 
-- Use JSON format (jsonresume.org standard) in `assets/json/resume.json`
-- Or use YAML format in `_data/cv.yml` (delete resume.json to use this)
-- Add education, work experience, skills, awards, publications
+- Replace the PDF to update the CV
+- Update `cv_pdf` in `_data/socials.yml` if the PDF path changes
 
 ### 5. Publications
 
@@ -474,7 +473,7 @@ Help users avoid these frequent errors:
 | ----------------------- | ------------------------------------------- | --------------------------------- |
 | Change personal info    | `_config.yml`, `_pages/about.md`            | CUSTOMIZE.md § Configuration      |
 | Add profile picture     | `assets/img/prof_pic.jpg`                   | CUSTOMIZE.md § About page         |
-| Update CV               | `assets/json/resume.json` OR `_data/cv.yml` | CUSTOMIZE.md § CV information     |
+| Update CV               | `assets/pdf/curriculum-vitae.pdf`          | CUSTOMIZE.md § CV information     |
 | Add publications        | `_bibliography/papers.bib`                  | CUSTOMIZE.md § Publications       |
 | Add blog post           | `_posts/YYYY-MM-DD-title.md`                | CUSTOMIZE.md § Blog posts         |
 | Create project          | `_projects/name.md`                         | CUSTOMIZE.md § Projects           |
