@@ -1,4 +1,5 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
+let activeThemeSetting;
 
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
@@ -13,19 +14,26 @@ let toggleThemeSetting = () => {
 };
 
 // Change the theme setting and apply the theme.
-let setThemeSetting = (themeSetting) => {
-  localStorage.setItem("theme", themeSetting);
+let setThemeSetting = (themeSetting, animate = true) => {
+  activeThemeSetting = themeSetting;
+  try {
+    localStorage.setItem("theme", themeSetting);
+  } catch {
+    // Continue using the selected theme when browser storage is unavailable.
+  }
 
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
 
-  applyTheme();
+  applyTheme(animate);
 };
 
 // Apply the computed dark or light theme to the website.
-let applyTheme = () => {
+let applyTheme = (animate = false) => {
   let theme = determineComputedTheme();
 
-  transTheme();
+  if (animate) transTheme();
+  // Apply the palette before optional integrations can affect initialization.
+  document.documentElement.setAttribute("data-theme", theme);
   setHighlight(theme);
   setGiscusTheme(theme);
   updateCalendarUrl();
@@ -54,8 +62,6 @@ let applyTheme = () => {
   if (typeof vegaEmbed !== "undefined") {
     setVegaLiteTheme(theme);
   }
-
-  document.documentElement.setAttribute("data-theme", theme);
 
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
@@ -89,12 +95,16 @@ let applyTheme = () => {
 };
 
 let setHighlight = (theme) => {
+  const lightStyles = document.getElementById("highlight_theme_light");
+  const darkStyles = document.getElementById("highlight_theme_dark");
+  if (!lightStyles || !darkStyles) return;
+
   if (theme == "dark") {
-    document.getElementById("highlight_theme_light").media = "none";
-    document.getElementById("highlight_theme_dark").media = "";
+    lightStyles.media = "none";
+    darkStyles.media = "";
   } else {
-    document.getElementById("highlight_theme_dark").media = "none";
-    document.getElementById("highlight_theme_light").media = "";
+    darkStyles.media = "none";
+    lightStyles.media = "";
   }
 };
 
@@ -237,13 +247,20 @@ let transTheme = () => {
   document.documentElement.classList.add("transition");
   window.setTimeout(() => {
     document.documentElement.classList.remove("transition");
-  }, 500);
+  }, 200);
 };
 
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default is "system".
 let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
+  let themeSetting = activeThemeSetting;
+  if (!themeSetting) {
+    try {
+      themeSetting = localStorage.getItem("theme");
+    } catch {
+      themeSetting = "system";
+    }
+  }
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
     themeSetting = "system";
   }
@@ -269,21 +286,23 @@ let determineComputedTheme = () => {
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
 
-  setThemeSetting(themeSetting);
+  setThemeSetting(themeSetting, false);
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
     const mode_toggle = document.getElementById("light-toggle");
 
-    mode_toggle.addEventListener("click", function () {
+    mode_toggle?.addEventListener("click", function () {
       toggleThemeSetting();
     });
   });
 
   // Add event listener to the system theme preference change.
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
-    applyTheme();
-  });
+  if (window.matchMedia) {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+      applyTheme(true);
+    });
+  }
 };
 
 // Get the appropriate background color for Google Calendar based on current theme

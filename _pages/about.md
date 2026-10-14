@@ -11,17 +11,13 @@ profile:
   location: GIKI, Pakistan
   location_url: https://giki.edu.pk
 
-# Replace machines: [] with entries like the example below. Add or remove spec fields as needed.
+# Copy a machine entry to add another. Add or remove spec fields as needed.
 workstation:
-  machines: []
-  # machines:
-  #   - name: My desktop
-  #     specs:
-  #       CPU: Your processor
-  #       GPU: Your graphics card
-  #       RAM: Your memory
-  #       Storage: Your drives
-  #       OS: Your operating system
+  machines:
+    - name: MacBook Pro (M4)
+      specs:
+        RAM: 16 GB
+        Storage: 1 TB
 
 selected_papers: False # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page

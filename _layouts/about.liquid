@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post about-page">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -15,78 +15,82 @@ layout: default
   </header>
 
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+    <div class="about-intro">
+      {% if page.profile %}
+        <div class="profile about-profile">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: 701px) 240px, (max-width: 280px) 90vw, 240px{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if site.data.socials.email or page.profile.location or page.profile.more_info %}
-          <div class="more-info">
-            {% if site.data.socials.email %}
-              <p><a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email | escape }}</a></p>
-            {% endif %}
-            {% if page.profile.location %}
-              <p>
-                {% if page.profile.location_url %}
-                  <a href="{{ page.profile.location_url | escape }}">{{ page.profile.location | escape }}</a>
-                {% else %}
-                  {{ page.profile.location | escape }}
-                {% endif %}
-              </p>
-            {% endif %}
-            {{ page.profile.more_info }}
-          </div>
-        {% endif %}
-        {% if page.workstation %}
-          <section class="workstation" aria-labelledby="workstation-title">
-            <h2 id="workstation-title">Workstation</h2>
-            {% for machine in page.workstation.machines %}
-              <div class="workstation-machine">
-                <h3>{{ machine.name | escape }}</h3>
-                <dl>
-                  {% for spec in machine.specs %}
-                    <div class="workstation-spec">
-                      <dt>{{ spec[0] | escape }}</dt>
-                      <dd>{{ spec[1] | escape }}</dd>
-                    </div>
-                  {% endfor %}
-                </dl>
-              </div>
-            {% endfor %}
-          </section>
-        {% endif %}
-      </div>
-    {% endif %}
+          {% if site.data.socials.email or page.profile.location or page.profile.more_info %}
+            <div class="more-info">
+              {% if site.data.socials.email %}
+                <p>
+                  <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email | escape }}</a>
+                </p>
+              {% endif %}
+              {% if page.profile.location %}
+                <p>
+                  {% if page.profile.location_url %}
+                    <a href="{{ page.profile.location_url | escape }}">{{ page.profile.location | escape }}</a>
+                  {% else %}
+                    {{ page.profile.location | escape }}
+                  {% endif %}
+                </p>
+              {% endif %}
+              {{ page.profile.more_info }}
+            </div>
+          {% endif %}
+          {% if page.workstation %}
+            <section class="workstation" aria-labelledby="workstation-title">
+              <h2 id="workstation-title">Workstation</h2>
+              {% for machine in page.workstation.machines %}
+                <div class="workstation-machine">
+                  <h3>{{ machine.name | escape }}</h3>
+                  <dl>
+                    {% for spec in machine.specs %}
+                      <div class="workstation-spec">
+                        <dt>{{ spec[0] | escape }}</dt>
+                        <dd>{{ spec[1] | escape }}</dd>
+                      </div>
+                    {% endfor %}
+                  </dl>
+                </div>
+              {% endfor %}
+            </section>
+          {% endif %}
+        </div>
+      {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+      <div class="about-biography">{{ content }}</div>
+    </div>
 
     {% if page.achievements %}
       <section class="achievements" aria-labelledby="achievements-title">
         <h2 id="achievements-title">Achievements</h2>
         {% if page.achievements.size > 0 %}
-          <div class="achievement-grid">
+          <div class="achievement-list">
             {% for achievement in page.achievements %}
-              <div class="achievement-panel">
-                <div class="achievement-header">
-                  <h3>{{ achievement.title | escape }}</h3>
-                  {% if achievement.year %}
+              <article class="achievement-entry">
+                {% if achievement.year %}
+                  <div class="achievement-meta">
                     <span class="achievement-year">{{ achievement.year | escape }}</span>
-                  {% endif %}
+                  </div>
+                {% endif %}
+                <div class="achievement-body">
+                  <h3>{{ achievement.title | escape }}</h3>
+                  <div class="achievement-description">{{ achievement.description | markdownify }}</div>
                 </div>
-                <div class="achievement-description">{{ achievement.description | markdownify }}</div>
-              </div>
+              </article>
             {% endfor %}
           </div>
         {% endif %}

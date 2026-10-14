@@ -320,9 +320,9 @@ Note that `posts` is also a collection, but it is a default collection created a
 Edit the `projects` list at the top of [\_pages/projects.md](_pages/projects.md). Each entry creates a small clickable card, and cards appear in the order listed:
 
 ```yaml
-  - title: My Project
-    description: A short description of what the project does.
-    url: https://github.com/your-username/your-project
+- title: My Project
+  description: A short description of what the project does.
+  url: https://github.com/your-username/your-project
 ```
 
 The same Markdown file contains the page title, navigation settings, card markup, and styles. Use a full URL for external projects or a root-relative path for a page on this site.
@@ -593,7 +593,7 @@ achievements:
     description: A short description.
 ```
 
-Descriptions support Markdown formatting. Entries appear beneath the About text as accent-bordered panels in list order.
+Descriptions support Markdown formatting. Entries appear beneath the About text as academic honor records with fine separators and optional year labels, in list order.
 
 ## Adding workstation specs
 

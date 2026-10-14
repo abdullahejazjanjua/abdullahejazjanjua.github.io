@@ -27,33 +27,27 @@ projects:
 
 _styles: |
   .project-showcase {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-    gap: 1rem;
+    margin: 0;
     padding: 0;
     list-style: none;
+    border-top: 1px solid var(--global-rule-color);
   }
 
   .project-showcase > li {
     min-width: 0;
+    border-bottom: 1px solid var(--global-rule-color);
   }
 
   .project-showcase .showcase-card {
     display: block;
-    height: 100%;
-    padding: 1.25rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 0.5rem;
-    background: var(--global-card-bg-color);
+    padding: 1.25rem 0;
     color: var(--global-text-color);
     text-decoration: none;
     overflow-wrap: anywhere;
-    transition: border-color 150ms ease;
   }
 
   .project-showcase .showcase-card:hover,
   .project-showcase .showcase-card:focus-visible {
-    border-color: var(--global-theme-color);
     text-decoration: none;
   }
 
@@ -63,13 +57,14 @@ _styles: |
   }
 
   .project-showcase .showcase-title {
-    margin: 0 0 0.5rem;
+    margin: 0;
     color: var(--global-theme-color);
     text-decoration: underline;
     text-underline-offset: 0.2em;
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.3;
+    text-decoration-thickness: 1px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4;
   }
 
   .project-showcase .showcase-card:hover .showcase-title,
@@ -78,10 +73,37 @@ _styles: |
   }
 
   .project-showcase .showcase-description {
-    margin: 0;
+    margin: 0.5rem 0 0;
+    max-width: 46rem;
     color: var(--global-text-color-light);
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  .project-showcase .showcase-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .project-showcase .showcase-destination {
+    flex-shrink: 0;
+    color: var(--global-theme-color);
+    font-size: 0.8125rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .project-showcase .showcase-card:hover .showcase-destination {
+    color: var(--global-hover-color);
+  }
+
+  @media (max-width: 400px) {
+    .project-showcase .showcase-heading {
+      flex-wrap: wrap;
+      gap: 0.25rem 1rem;
+    }
   }
 ---
 
@@ -94,7 +116,10 @@ Use a full URL for external links or a root-relative path for pages on this site
   {% for project in page.projects %}
     <li>
       <a class="showcase-card" href="{{ project.url | relative_url | escape }}">
-        <h2 class="showcase-title">{{ project.title | escape }}</h2>
+        <div class="showcase-heading">
+          <h2 class="showcase-title">{{ project.title | escape }}</h2>
+          <span class="showcase-destination">view project <span aria-hidden="true">↗</span></span>
+        </div>
         <p class="showcase-description">{{ project.description | escape }}</p>
       </a>
     </li>
