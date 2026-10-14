@@ -8,23 +8,33 @@ profile:
   align: right
   image: profile_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Ghulam Ishaq Khan Institute of Engineering Sciences and Technology</p>
-    <p>Topi, Swabi</p>
+  location: GIKI, Pakistan
+  location_url: https://giki.edu.pk
+
+# Replace machines: [] with entries like the example below. Add or remove spec fields as needed.
+workstation:
+  machines: []
+  # machines:
+  #   - name: My desktop
+  #     specs:
+  #       CPU: Your processor
+  #       GPU: Your graphics card
+  #       RAM: Your memory
+  #       Storage: Your drives
+  #       OS: Your operating system
 
 selected_papers: False # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
-# Edit achievements here or copy an entry to add another. Markdown formatting is supported.
+# Copy an entry to add an achievement. The year is optional; descriptions support Markdown.
 achievements:
-  - |
-    **Mitacs Globalink Research Internship — 2026**
-
-    Selected for the competitive, fully funded Mitacs Globalink Research Internship to conduct research on diffusion models and subject personalization at Carleton University, Canada, under Dr. Junfeng Wen.
-  - |
-    **Academic Excellence — GIKI**
-
-    Achieved a CGPA of 3.78/4.00, ranking 4th among 41 students in my class and 13th among 631 students in my batch. Earned Dean's Honor Roll Distinction in every semester to date.
+  - title: Mitacs Globalink Research Internship
+    year: "2026"
+    description: >-
+      Selected for the competitive, fully funded Mitacs Globalink Research Internship to conduct research on diffusion models and subject personalization at Carleton University, Canada, under Dr. Junfeng Wen.
+  - title: Academic Excellence — GIKI
+    description: >-
+      Achieved a CGPA of 3.78/4.00, ranking 4th among 41 students in my class and 13th among 631 students in my batch. Earned Dean's Honor Roll Distinction in every semester to date.
 
 announcements:
   enabled: False # includes a list of news items

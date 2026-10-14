@@ -32,13 +32,40 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        {% if site.data.socials.email or page.profile.more_info %}
+        {% if site.data.socials.email or page.profile.location or page.profile.more_info %}
           <div class="more-info">
             {% if site.data.socials.email %}
               <p><a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email | escape }}</a></p>
             {% endif %}
+            {% if page.profile.location %}
+              <p>
+                {% if page.profile.location_url %}
+                  <a href="{{ page.profile.location_url | escape }}">{{ page.profile.location | escape }}</a>
+                {% else %}
+                  {{ page.profile.location | escape }}
+                {% endif %}
+              </p>
+            {% endif %}
             {{ page.profile.more_info }}
           </div>
+        {% endif %}
+        {% if page.workstation %}
+          <section class="workstation" aria-labelledby="workstation-title">
+            <h2 id="workstation-title">Workstation</h2>
+            {% for machine in page.workstation.machines %}
+              <div class="workstation-machine">
+                <h3>{{ machine.name | escape }}</h3>
+                <dl>
+                  {% for spec in machine.specs %}
+                    <div class="workstation-spec">
+                      <dt>{{ spec[0] | escape }}</dt>
+                      <dd>{{ spec[1] | escape }}</dd>
+                    </div>
+                  {% endfor %}
+                </dl>
+              </div>
+            {% endfor %}
+          </section>
         {% endif %}
       </div>
     {% endif %}
@@ -46,14 +73,22 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     {% if page.achievements %}
-      <section class="mt-4" aria-labelledby="achievements-title">
+      <section class="achievements" aria-labelledby="achievements-title">
         <h2 id="achievements-title">Achievements</h2>
         {% if page.achievements.size > 0 %}
-          <ul>
+          <div class="achievement-grid">
             {% for achievement in page.achievements %}
-              <li>{{ achievement | markdownify }}</li>
+              <div class="achievement-panel">
+                <div class="achievement-header">
+                  <h3>{{ achievement.title | escape }}</h3>
+                  {% if achievement.year %}
+                    <span class="achievement-year">{{ achievement.year | escape }}</span>
+                  {% endif %}
+                </div>
+                <div class="achievement-description">{{ achievement.description | markdownify }}</div>
+              </div>
             {% endfor %}
-          </ul>
+          </div>
         {% endif %}
       </section>
     {% endif %}

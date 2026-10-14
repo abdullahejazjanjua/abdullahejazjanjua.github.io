@@ -45,6 +45,7 @@ Here we will give you some tips on how to customize the website. One important t
   - [Adding social media information](#adding-social-media-information)
   - [Adding a newsletter](#adding-a-newsletter)
   - [Adding achievements](#adding-achievements)
+  - [Adding workstation specs](#adding-workstation-specs)
   - [Managing publication display](#managing-publication-display)
   - [Adding a Google Calendar](#adding-a-google-calendar)
     - [Basic usage](#basic-usage)
@@ -587,13 +588,35 @@ Edit the `achievements` list in [\_pages/about.md](_pages/about.md). Copy an ent
 
 ```yaml
 achievements:
-  - |
-    **Achievement title**
-
-    A short description.
+  - title: Achievement title
+    year: "2026" # optional
+    description: A short description.
 ```
 
-Entries support Markdown formatting and appear beneath the About text in list order.
+Descriptions support Markdown formatting. Entries appear beneath the About text as accent-bordered panels in list order.
+
+## Adding workstation specs
+
+The Workstation area appears beneath the profile location on the main page. Edit `workstation` in [\_pages/about.md](_pages/about.md), replacing `machines: []` with your machine entries:
+
+```yaml
+workstation:
+  machines:
+    - name: My desktop
+      specs:
+        CPU: Your processor
+        GPU: Your graphics card
+        RAM: Your memory
+        Storage: Your drives
+        OS: Your operating system
+    - name: My laptop
+      specs:
+        Model: Your laptop model
+        RAM: Your memory
+        OS: Your operating system
+```
+
+Add or remove spec fields freely; each field is displayed in the order listed. The profile location text and destination are configured with `profile.location` and `profile.location_url` in the same file.
 
 ## Managing publication display
 

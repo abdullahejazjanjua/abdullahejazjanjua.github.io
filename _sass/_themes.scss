@@ -2,46 +2,41 @@
  * Themes
  ******************************************************************************/
 
-@use "sass:color";
-
 :root {
+  // Tokyo Night Light: https://github.com/enkia/tokyo-night-vscode-theme
   color-scheme: light;
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  --global-bg-color: #e6e7ed;
+  --global-code-bg-color: #dcdee3;
+  --global-text-color: #343b58;
+  --global-text-color-light: #5a607d;
+  --global-theme-color: #2959aa;
+  --global-hover-color: #006c86;
+  --global-hover-text-color: #e6e7ed;
+  --global-footer-bg-color: #d6d8df;
+  --global-footer-text-color: #343b58;
+  --global-footer-link-color: #2959aa;
+  --global-distill-app-color: #5a607d;
+  --global-divider-color: #acb0bf;
+  --global-card-bg-color: #dcdee3;
+  --global-highlight-color: #8c4351;
+  --global-back-to-top-bg-color: #2959aa;
+  --global-back-to-top-text-color: #e6e7ed;
+  --global-newsletter-bg-color: #dcdee3;
+  --global-newsletter-text-color: #343b58;
+  --global-selection-bg-color: #acb0bf;
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  --global-tip-block: #33635c;
+  --global-tip-block-bg: #d6e2de;
+  --global-tip-block-text: #343b58;
+  --global-tip-block-title: #33635c;
+  --global-warning-block: #8f5e15;
+  --global-warning-block-bg: #e7e8c8;
+  --global-warning-block-text: #343b58;
+  --global-warning-block-title: #8f5e15;
+  --global-danger-block: #8c4351;
+  --global-danger-block-bg: #e8d6dc;
+  --global-danger-block-text: #343b58;
+  --global-danger-block-title: #8c4351;
 
   #light-toggle-system {
     padding-left: 10px;
@@ -77,42 +72,40 @@
 }
 
 html[data-theme="dark"] {
+  // Tokyo Night Storm: https://github.com/folke/tokyonight.nvim
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
+  --global-bg-color: #24283b;
+  --global-code-bg-color: #1f2335;
+  --global-text-color: #c0caf5;
+  --global-text-color-light: #a9b1d6;
+  --global-theme-color: #7aa2f7;
+  --global-hover-color: #7dcfff;
+  --global-hover-text-color: #1f2335;
+  --global-footer-bg-color: #1f2335;
+  --global-footer-text-color: #a9b1d6;
+  --global-footer-link-color: #7aa2f7;
+  --global-distill-app-color: #a9b1d6;
+  --global-divider-color: #545c7e;
+  --global-card-bg-color: #292e42;
+  --global-highlight-color: #f7768e;
+  --global-back-to-top-bg-color: #7aa2f7;
+  --global-back-to-top-text-color: #1f2335;
+  --global-newsletter-bg-color: #1f2335;
+  --global-newsletter-text-color: #c0caf5;
+  --global-selection-bg-color: #394b70;
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #215d42;
-  --global-tip-block-text: #beffe2;
-  --global-tip-block-title: #e2f5ec;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #6b5900;
-  --global-warning-block-text: #fff2af;
-  --global-warning-block-title: #fff8d8;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #600;
-  --global-danger-block-text: #ffb9b9;
-  --global-danger-block-title: #ffe0e0;
+  --global-tip-block: #73daca;
+  --global-tip-block-bg: #1f353d;
+  --global-tip-block-text: #c0caf5;
+  --global-tip-block-title: #73daca;
+  --global-warning-block: #e0af68;
+  --global-warning-block-bg: #363343;
+  --global-warning-block-text: #c0caf5;
+  --global-warning-block-title: #e0af68;
+  --global-danger-block: #f7768e;
+  --global-danger-block-bg: #3b2b40;
+  --global-danger-block-text: #c0caf5;
+  --global-danger-block-title: #f7768e;
 
   .only-light {
     display: none;

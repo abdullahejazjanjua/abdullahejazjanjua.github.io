@@ -64,7 +64,9 @@ _styles: |
 
   .project-showcase .showcase-title {
     margin: 0 0 0.5rem;
-    color: var(--global-text-color);
+    color: var(--global-theme-color);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.3;
@@ -72,7 +74,7 @@ _styles: |
 
   .project-showcase .showcase-card:hover .showcase-title,
   .project-showcase .showcase-card:focus-visible .showcase-title {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
   }
 
   .project-showcase .showcase-description {
