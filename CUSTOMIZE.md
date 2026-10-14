@@ -316,7 +316,15 @@ Note that `posts` is also a collection, but it is a default collection created a
 
 ## Creating new projects
 
-You can create new projects by adding new Markdown files in the [\_projects](_projects/) directory. The easiest way to do this is to copy an existing project and modify it.
+Edit the `projects` list at the top of [\_pages/project-showcase.md](_pages/project-showcase.md). Each entry creates a small clickable card, and cards appear in the order listed:
+
+```yaml
+  - title: My Project
+    description: A short description of what the project does.
+    url: https://github.com/your-username/your-project
+```
+
+The same Markdown file contains the page title, navigation settings, card markup, and styles. Use a full URL for external projects or a root-relative path for a page on this site.
 
 ## Adding some news
 
@@ -324,7 +332,7 @@ You can add news in the about page by adding new Markdown files in the [\_news](
 
 ## Adding Collections
 
-This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories. The theme comes with three default collections: `news`, `projects`, and `books`. Items from the `news` collection are automatically displayed on the home page, while items from the `projects` collection are displayed on a responsive grid on the projects page, and items from the `books` collection are displayed on its own `bookshelf` page inside `submenus`.
+This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories. The theme comes with three default collections: `news`, `projects`, and `books`. The Project Showcase uses its own list in [\_pages/project-showcase.md](_pages/project-showcase.md), independently of the `projects` collection.
 
 You can easily create your own collections for any type of content—teaching materials, courses, apps, short stories, or whatever suits your needs.
 
@@ -366,7 +374,7 @@ To create a new collection, follow these steps. We will create a `teaching` coll
 
 3. **Create a landing page for your collection**
 
-   Add a Markdown file in `_pages/` (e.g., `teaching.md`) that will serve as the main page for your collection. You can use [\_pages/projects.md](_pages/projects.md) or [\_pages/books.md](_pages/books.md) as a template and adapt it for your needs.
+   Add a Markdown file in `_pages/` (e.g., `teaching.md`) that will serve as the main page for your collection. You can use [\_pages/teaching.md](_pages/teaching.md) as a template and adapt it for your needs.
 
    In your landing page, access your collection using the `site.COLLECTION_NAME` variable:
 
@@ -745,7 +753,7 @@ To remove the news section, you can:
 To remove the projects, you can:
 
 - delete the [\_projects](_projects/) directory
-- delete the projects page [\_pages/projects.md](_pages/projects.md)
+- delete the showcase page [\_pages/project-showcase.md](_pages/project-showcase.md)
 - remove reference to projects page in our [\_pages/dropdown.md](_pages/dropdown.md)
 - remove projects part in the `Collections` section in the [\_config.yml](_config.yml) file
 
