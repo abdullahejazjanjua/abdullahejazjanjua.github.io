@@ -156,9 +156,9 @@ npx prettier . --write
 - Use Markdown for content
 - Support for math (MathJax), code highlighting, images, videos
 
-### 7. Project Showcase
+### 7. Projects
 
-**Files:** `_pages/project-showcase.md`
+**Files:** `_pages/projects.md`
 
 - Add entries to the `projects` list with title, description, and url
 - Cards appear in list order and link directly to each project's URL
@@ -192,7 +192,7 @@ npx prettier . --write
 
 - Toggle features: Google Analytics, comments (Giscus), related posts, tooltips, medium zoom
 - Enable/disable pages: blog, projects, publications, repositories
-- Configure navbar, footer, search functionality
+- Configure navbar and footer
 
 ## Code Style Standards
 
@@ -476,7 +476,7 @@ Help users avoid these frequent errors:
 | Update CV               | `assets/pdf/curriculum-vitae.pdf`          | CUSTOMIZE.md § CV information     |
 | Add publications        | `_bibliography/papers.bib`                  | CUSTOMIZE.md § Publications       |
 | Add blog post           | `_posts/YYYY-MM-DD-title.md`                | CUSTOMIZE.md § Blog posts         |
-| Create project          | `_pages/project-showcase.md`                | CUSTOMIZE.md § Projects           |
+| Create project          | `_pages/projects.md`                        | CUSTOMIZE.md § Projects           |
 | Add news item           | `_news/announcement.md`                     | CUSTOMIZE.md § News               |
 | Change theme color      | `_sass/_themes.scss`                        | CUSTOMIZE.md § Theme colors       |
 | Add social links        | `_data/socials.yml`                         | CUSTOMIZE.md § Social media       |

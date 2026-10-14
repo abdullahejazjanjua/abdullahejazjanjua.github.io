@@ -17,7 +17,6 @@ To add new social media information, there are a few places you might need to mo
 - \_data/socials.yml - your social media information
 - \_includes/metadata.liquid - add social media information to site metadata
 - \_includes/social.liquid - where the social media icon will be displayed
-- \_scripts/search.liquid.js - make the social media information appear in search
 
 ## GitHub Copilot Agents
 

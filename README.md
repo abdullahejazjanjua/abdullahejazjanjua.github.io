@@ -335,7 +335,7 @@ This template has a built-in light/dark mode. It detects the user preferred colo
 
 ### CV
 
-The CV navigation and social links open [the PDF CV](assets/pdf/curriculum-vitae.pdf) directly. The PDF path is configured with `cv_pdf` in [\_data/socials.yml](_data/socials.yml).
+The CV navigation link opens [the PDF CV](assets/pdf/curriculum-vitae.pdf) directly. The PDF path is configured with `cv_pdf` in [\_data/socials.yml](_data/socials.yml).
 
 ---
 
@@ -359,7 +359,7 @@ You can add extra information to a publication, like a PDF file in the [assets/p
 
 ### Collections
 
-This Jekyll theme implements `collections` to let you break up your work into categories. The Project Showcase is managed separately in [\_pages/project-showcase.md](_pages/project-showcase.md): add a title, description, and URL to its `projects` list to create a clickable card.
+This Jekyll theme implements `collections` to let you break up your work into categories. The Projects page is managed separately in [\_pages/projects.md](_pages/projects.md): add a title, description, and URL to its `projects` list to create a clickable card.
 
 You can easily create your own collections, apps, short stories, courses, or whatever your creative work is. To do this, edit the collections in the [\_config.yml](_config.yml) file, create a corresponding folder, and create a landing page for your collection, similar to `_pages/teaching.md`.
 

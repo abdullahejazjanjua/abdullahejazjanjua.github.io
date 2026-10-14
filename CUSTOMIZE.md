@@ -44,7 +44,7 @@ Here we will give you some tips on how to customize the website. One important t
   - [Customizing layout and UI](#customizing-layout-and-ui)
   - [Adding social media information](#adding-social-media-information)
   - [Adding a newsletter](#adding-a-newsletter)
-  - [Configuring search features](#configuring-search-features)
+  - [Adding achievements](#adding-achievements)
   - [Managing publication display](#managing-publication-display)
   - [Adding a Google Calendar](#adding-a-google-calendar)
     - [Basic usage](#basic-usage)
@@ -198,7 +198,7 @@ These tools are best used for:
 - Understanding the architecture and how different parts of the codebase work together
 - Finding where specific functionality is implemented
 - Learning about the Jekyll template structure and Liquid syntax used in the theme
-- Exploring how specific features are implemented (e.g., how publications are rendered, how search works, etc.)
+- Exploring how specific features are implemented (e.g., how publications are rendered)
 
 **Access these tools:**
 
@@ -216,7 +216,7 @@ Understanding al-folio's technology stack will help you better customize and ext
 - **HTML & CSS**: The theme uses semantic HTML5 and modern CSS for styling and layout.
 - **SCSS**: Stylesheets are written in [SCSS (Sass)](https://sass-lang.com/), a CSS preprocessor that provides variables, mixins, and functions for more maintainable styling. SCSS files are located in `_sass/` and compiled to CSS during the build process.
 - **Bootstrap**: [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/) is used for responsive grid layout and base styling components.
-- **JavaScript**: Minimal JavaScript is used for interactive features like the dark mode toggle, search functionality, and dynamic content rendering.
+- **JavaScript**: Minimal JavaScript is used for interactive features like the dark mode toggle and dynamic content rendering.
 - **MathJax**: For rendering mathematical equations in LaTeX format on your pages and blog posts.
 - **Mermaid**: For creating diagrams (flowcharts, sequence diagrams, etc.) directly in Markdown.
 - **Font Awesome, Academicons, and Tabler Icons**: Icon libraries used throughout the theme for visual elements.
@@ -272,7 +272,7 @@ Understanding how these technologies work together will help you customize al-fo
 
 ## Modifying the CV information
 
-Replace [assets/pdf/curriculum-vitae.pdf](assets/pdf/curriculum-vitae.pdf) to update your CV. The navigation, social links, and search use the `cv_pdf` path in [\_data/socials.yml](_data/socials.yml). If you rename the PDF, update that path as well.
+Replace [assets/pdf/curriculum-vitae.pdf](assets/pdf/curriculum-vitae.pdf) to update your CV. The navigation uses the `cv_pdf` path in [\_data/socials.yml](_data/socials.yml). If you rename the PDF, update that path as well.
 
 ## Modifying the user and repository information
 
@@ -316,7 +316,7 @@ Note that `posts` is also a collection, but it is a default collection created a
 
 ## Creating new projects
 
-Edit the `projects` list at the top of [\_pages/project-showcase.md](_pages/project-showcase.md). Each entry creates a small clickable card, and cards appear in the order listed:
+Edit the `projects` list at the top of [\_pages/projects.md](_pages/projects.md). Each entry creates a small clickable card, and cards appear in the order listed:
 
 ```yaml
   - title: My Project
@@ -332,7 +332,7 @@ You can add news in the about page by adding new Markdown files in the [\_news](
 
 ## Adding Collections
 
-This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories. The theme comes with three default collections: `news`, `projects`, and `books`. The Project Showcase uses its own list in [\_pages/project-showcase.md](_pages/project-showcase.md), independently of the `projects` collection.
+This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories. The theme comes with three default collections: `news`, `projects`, and `books`. The Projects page uses its own list in [\_pages/projects.md](_pages/projects.md), independently of the `projects` collection.
 
 You can easily create your own collections for any type of content—teaching materials, courses, apps, short stories, or whatever suits your needs.
 
@@ -573,7 +573,7 @@ max_width: 930px
 
 ## Adding social media information
 
-You can add your social media links by adding the specified information in the [\_data/socials.yml](_data/socials.yml) file. This information will appear at the bottom of the `About` page and in the search results by default, but this could be changed to appear at the header of the page by setting `enable_navbar_social: true` and doesn't appear in the search by setting `socials_in_search: false`, both in [\_config.yml](_config.yml).
+Contact information is stored in [\_data/socials.yml](_data/socials.yml). The `email` value is displayed as a clickable address beneath the About page's profile image. The bottom social links are disabled with `social: false` in [\_pages/about.md](_pages/about.md).
 
 ## Adding a newsletter
 
@@ -581,23 +581,19 @@ You can add a newsletter subscription form by adding the specified information a
 
 Depending on your specified footer behavior, the sign up form either will appear at the bottom of the `About` page and at the bottom of blogposts if `related_posts` are enabled, or in the footer at the bottom of each page.
 
-## Configuring search features
+## Adding achievements
 
-The theme includes a powerful search functionality that can be customized in [\_config.yml](_config.yml):
+Edit the `achievements` list in [\_pages/about.md](_pages/about.md). Copy an entry to add another achievement:
 
 ```yaml
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
-bib_search: true
+achievements:
+  - |
+    **Achievement title**
+
+    A short description.
 ```
 
-- `search_enabled`: Enables the site-wide search feature. When enabled, a search box appears in the navigation bar, allowing users to search across your site content.
-- `socials_in_search`: Includes your social media links and contact information in search results. This makes it easier for visitors to find ways to connect with you.
-- `posts_in_search`: Includes blog posts in the search index. Users can search for posts by title, content, or tags.
-- `bib_search`: Enables search within your publications/bibliography. When enabled, a search box appears on the publications page, allowing visitors to filter publications by title, author, venue, or year.
-
-All these search features work in real-time and do not require a page reload.
+Entries support Markdown formatting and appear beneath the About text in list order.
 
 ## Managing publication display
 
@@ -753,7 +749,7 @@ To remove the news section, you can:
 To remove the projects, you can:
 
 - delete the [\_projects](_projects/) directory
-- delete the showcase page [\_pages/project-showcase.md](_pages/project-showcase.md)
+- delete the Projects page [\_pages/projects.md](_pages/projects.md)
 - remove reference to projects page in our [\_pages/dropdown.md](_pages/dropdown.md)
 - remove projects part in the `Collections` section in the [\_config.yml](_config.yml) file
 
@@ -774,7 +770,6 @@ To remove the publications, you can:
 You can also:
 
 - delete the [\_layouts/bib.liquid](_layouts/bib.liquid) file
-- delete [\_includes/bib_search.liquid](_includes/bib_search.liquid)
 - delete [\_includes/citation.liquid](_includes/citation.liquid)
 - delete [\_includes/selected_papers.liquid](_includes/selected_papers.liquid)
 - delete [\_plugins/google-scholar-citations.rb](_plugins/google-scholar-citations.rb)

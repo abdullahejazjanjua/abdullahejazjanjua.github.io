@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Project Showcase
-permalink: /project-showcase/
+title: projects
+permalink: /projects/
 description: A selection of my coding projects and experiments.
 nav: true
 nav_order: 3
