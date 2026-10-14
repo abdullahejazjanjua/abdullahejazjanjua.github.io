@@ -335,7 +335,7 @@ This template has a built-in light/dark mode. It detects the user preferred colo
 
 ### CV
 
-The CV navigation link opens [the PDF CV](assets/pdf/curriculum-vitae.pdf) directly. The PDF path is configured with `cv_pdf` in [\_data/socials.yml](_data/socials.yml).
+The CV navigation link opens [the PDF CV](assets/pdf/curriculum_vitae.pdf) directly. The PDF path is configured with `cv_pdf` in [\_data/socials.yml](_data/socials.yml).
 
 ---
 

@@ -23,10 +23,10 @@ achievements:
     year: "2026"
     description: >-
       Selected for the competitive, fully funded Mitacs Globalink Research Internship to conduct research on diffusion models and subject personalization at Carleton University, Canada, under [Dr. Junfeng Wen](#).
-  - title: Academic Excellence — GIKI
+  - title: Deans Honor Roll
     year: "2023–present"
     description: >-
-      Achieved a CGPA of 3.78/4.00, ranking 4th among 41 students in my class and 13th among 631 students in my batch. Earned Dean's Honor Roll Distinction in every semester to date.
+      Achieved a CGPA of 3.78/4.00, ranking 4th among 41 students in my class and 13th among 631 students in my batch. Earned consequentive Dean's Honor Roll Distinction in every semester to date.
 
 # Add projects using title, description, and url. They appear below Achievements in this order.
 projects:
@@ -60,8 +60,6 @@ latest_posts:
 
 I am a final-year Computer Science undergraduate at the Ghulam Ishaq Khan Institute of Engineering Sciences and Technology. While my prior research centers on computer vision and generative modeling, my primary technical interest lies in low-level systems for machine learning: optimizing inference, writing custom GPU kernels, and making neural networks run faster and more efficiently on hardware.
 
-<!-- Replace the # destinations on advisor links with their profile URLs. -->
+Currently, I am working with [Dr. Junfeng Wen](https://junfengwen.github.io/) at Carleton University on adapting pre-trained diffusion models along the temporal axis to model continuous facial aging. Prior to this, I conducted research at the Intelligent Machines Lab under [Dr. Waqas Sultani](https://waqassultani.github.io/) on domain generalization for DETR architectures and unsupervised domain adaptation for microscopy imaging. Alongside my research, I actively explore systems-level performance, which includes developing [TinyTorch](https://github.com/abdullahejazjanjua/tinytorch), a custom C++/CUDA deep learning framework with handcrafted, fused GPU kernels and an autograd engine from scratch.
 
-Currently, I am a Mitacs Globalink Research Intern at Carleton University advised by [Dr. Junfeng Wen](#), where I work on adapting pre-trained diffusion models along the temporal axis to model continuous facial aging. Prior to this, I conducted research at the Intelligent Machines Lab under [Dr. Waqas Sultani](#) on domain generalization for DETR architectures and unsupervised domain adaptation for microscopy imaging. Alongside my research, I actively explore systems-level performance, which includes developing TinyTorch, a custom C++/CUDA deep learning framework with handcrafted, fused GPU kernels and an autograd engine from scratch.
-
-When I am away from the keyboard, I read manga, manhwa (there are NOT same) , light novels, and spend time playing narrative-driven video games like Red Dead Redemption 2, The Witcher, and Ghost of Tsushima.
+When I am away from the keyboard, I read manga, manhwa, and light novels, and spend time playing narrative-driven video games like Red Dead Redemption 2, The Witcher, and Ghost of Tsushima.

@@ -132,7 +132,7 @@ npx prettier . --write
 
 ### 4. CV/Resume
 
-**Files:** `assets/pdf/curriculum-vitae.pdf`, `_data/socials.yml`
+**Files:** `assets/pdf/curriculum_vitae.pdf`, `_data/socials.yml`
 
 - Replace the PDF to update the CV
 - Update `cv_pdf` in `_data/socials.yml` if the PDF path changes
@@ -473,7 +473,7 @@ Help users avoid these frequent errors:
 | ----------------------- | ------------------------------------------ | --------------------------------- |
 | Change personal info    | `_config.yml`, `_pages/about.md`           | CUSTOMIZE.md § Configuration      |
 | Add profile picture     | `assets/img/prof_pic.jpg`                  | CUSTOMIZE.md § About page         |
-| Update CV               | `assets/pdf/curriculum-vitae.pdf`          | CUSTOMIZE.md § CV information     |
+| Update CV               | `assets/pdf/curriculum_vitae.pdf`          | CUSTOMIZE.md § CV information     |
 | Add publications        | `_bibliography/papers.bib`                 | CUSTOMIZE.md § Publications       |
 | Add blog post           | `_posts/YYYY-MM-DD-title.md`               | CUSTOMIZE.md § Blog posts         |
 | Create project          | `_pages/about.md`                          | CUSTOMIZE.md § Projects           |

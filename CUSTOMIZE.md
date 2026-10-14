@@ -79,7 +79,7 @@ The project is structured as follows, focusing on the main components that you w
 .
 ├── 📂 assets/: contains the assets that are displayed in the website
 │   └── 📂 pdf/
-│       └── 📄 curriculum-vitae.pdf: your CV PDF
+│       └── 📄 curriculum_vitae.pdf: your CV PDF
 ├── 📂 _bibliography/
 │   └── 📄 papers.bib: bibliography in BibTeX format
 ├── 📂 _books/: contains the bookshelf pages
@@ -273,7 +273,7 @@ Understanding how these technologies work together will help you customize al-fo
 
 ## Modifying the CV information
 
-Replace [assets/pdf/curriculum-vitae.pdf](assets/pdf/curriculum-vitae.pdf) to update your CV. The navigation uses the `cv_pdf` path in [\_data/socials.yml](_data/socials.yml). If you rename the PDF, update that path as well.
+Replace [assets/pdf/curriculum_vitae.pdf](assets/pdf/curriculum_vitae.pdf) to update your CV. The navigation uses the `cv_pdf` path in [\_data/socials.yml](_data/socials.yml). If you rename the PDF, update that path as well.
 
 ## Modifying the user and repository information
 
