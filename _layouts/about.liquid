@@ -21,55 +21,51 @@ layout: default
           <div class="profile-card">
             {% if page.profile.image %}
               {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% assign profile_image_alt = page.profile.image_alt | default: 'Profile portrait' %}
               {% if page.profile.image_circular %}
                 {% assign profile_image_class = 'img-fluid rounded-circle' %}
               {% else %}
                 {% assign profile_image_class = 'img-fluid rounded' %}
               {% endif %}
-              {% capture sizes %}(min-width: 701px) 214px, (max-width: 280px) 80vw, 214px{% endcapture %}
-              {%
-                include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-                cache_bust=true
-              %}
+              {% capture sizes %}(min-width: 701px) 218px, (max-width: 280px) 80vw, 218px{% endcapture %}
+              <div class="profile-portrait">
+                {%
+                  include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile_image_alt
+                  cache_bust=true
+                %}
+              </div>
             {% endif %}
-            {% if site.data.socials.email or page.profile.location or page.profile.more_info %}
-              <div class="more-info">
-                {% if site.data.socials.email %}
-                  <p>
-                    <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email | escape }}</a>
-                  </p>
+            {% if page.profile.role or site.data.socials.email or page.profile.location or page.profile.more_info %}
+              <div class="profile-details">
+                {% if page.profile.role %}
+                  <p class="profile-role">{{ page.profile.role | escape }}</p>
                 {% endif %}
-                {% if page.profile.location %}
-                  <p>
-                    {% if page.profile.location_url %}
-                      <a href="{{ page.profile.location_url | escape }}">{{ page.profile.location | escape }}</a>
-                    {% else %}
-                      {{ page.profile.location | escape }}
-                    {% endif %}
-                  </p>
-                {% endif %}
+                <dl class="profile-contact">
+                  {% if site.data.socials.email %}
+                    <div>
+                      <dt>Email</dt>
+                      <dd>
+                        <a href="mailto:{{ site.data.socials.email | encode_email }}">{{ site.data.socials.email | escape }}</a>
+                      </dd>
+                    </div>
+                  {% endif %}
+                  {% if page.profile.location %}
+                    <div>
+                      <dt>Affiliation</dt>
+                      <dd>
+                        {% if page.profile.location_url %}
+                          <a href="{{ page.profile.location_url | escape }}">{{ page.profile.location | escape }}</a>
+                        {% else %}
+                          {{ page.profile.location | escape }}
+                        {% endif %}
+                      </dd>
+                    </div>
+                  {% endif %}
+                </dl>
                 {{ page.profile.more_info }}
               </div>
             {% endif %}
           </div>
-          {% if page.workstation %}
-            <section class="workstation workstation-card" aria-labelledby="workstation-title">
-              <h2 id="workstation-title">Workstation</h2>
-              {% for machine in page.workstation.machines %}
-                <div class="workstation-machine">
-                  <h3>{{ machine.name | escape }}</h3>
-                  <dl>
-                    {% for spec in machine.specs %}
-                      <div class="workstation-spec">
-                        <dt>{{ spec[0] | escape }}</dt>
-                        <dd>{{ spec[1] | escape }}</dd>
-                      </div>
-                    {% endfor %}
-                  </dl>
-                </div>
-              {% endfor %}
-            </section>
-          {% endif %}
         </div>
       {% endif %}
 

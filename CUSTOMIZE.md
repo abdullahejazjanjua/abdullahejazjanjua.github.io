@@ -45,7 +45,7 @@ Here we will give you some tips on how to customize the website. One important t
   - [Adding social media information](#adding-social-media-information)
   - [Adding a newsletter](#adding-a-newsletter)
   - [Adding achievements](#adding-achievements)
-  - [Adding workstation specs](#adding-workstation-specs)
+  - [Editing the profile card](#editing-the-profile-card)
   - [Managing publication display](#managing-publication-display)
   - [Adding a Google Calendar](#adding-a-google-calendar)
     - [Basic usage](#basic-usage)
@@ -597,30 +597,21 @@ Descriptions support Markdown formatting. Entries appear beneath the About text 
 
 The `year` field also accepts date ranges such as `"2023–present"`. All achievement content is edited in the Markdown file; the layout is handled automatically.
 
-## Adding workstation specs
+## Editing the profile card
 
-The Workstation area appears beneath the profile location on the main page. Edit `workstation` in [\_pages/about.md](_pages/about.md), replacing `machines: []` with your machine entries:
+Edit `profile` in [\_pages/about.md](_pages/about.md) to update the portrait, academic role, and affiliation:
 
 ```yaml
-workstation:
-  machines:
-    - name: My desktop
-      specs:
-        CPU: Your processor
-        GPU: Your graphics card
-        RAM: Your memory
-        Storage: Your drives
-        OS: Your operating system
-    - name: My laptop
-      specs:
-        Model: Your laptop model
-        RAM: Your memory
-        OS: Your operating system
+profile:
+  image: profile_pic.png
+  image_alt: Portrait of Abdullah Ejaz Janjua
+  image_circular: false
+  role: Computer Science Undergraduate
+  location: GIKI, Pakistan
+  location_url: https://giki.edu.pk
 ```
 
-Add or remove spec fields freely; each field is displayed in the order listed. The profile location text and destination are configured with `profile.location` and `profile.location_url` in the same file.
-
-The profile image/contact details and workstation appear in separate cards. Change the image using `profile.image`, or update machines and specs using `workstation.machines`; no template or style edits are required.
+The image is loaded from `assets/img/`. The role is optional, and the email address comes from `email` in [\_data/socials.yml](_data/socials.yml). The card formatting is handled automatically; no HTML or CSS edits are needed.
 
 ## Managing publication display
 

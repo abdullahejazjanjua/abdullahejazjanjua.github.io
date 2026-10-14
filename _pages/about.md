@@ -7,17 +7,11 @@ subtitle: Talent is a pursued interest. Anything that you're willing to practice
 profile:
   align: right
   image: profile_pic.png
+  image_alt: Portrait of Abdullah Ejaz Janjua
   image_circular: false # crops the image to make it circular
+  role: Computer Science Undergraduate
   location: GIKI, Pakistan
   location_url: https://giki.edu.pk
-
-# Copy a machine entry to add another. Add or remove spec fields as needed.
-workstation:
-  machines:
-    - name: MacBook Pro (M4)
-      specs:
-        RAM: 16 GB
-        Storage: 1 TB
 
 selected_papers: False # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
