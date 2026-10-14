@@ -359,7 +359,7 @@ You can add extra information to a publication, like a PDF file in the [assets/p
 
 ### Collections
 
-This Jekyll theme implements `collections` to let you break up your work into categories. The Projects page is managed separately in [\_pages/projects.md](_pages/projects.md): add a title, description, and URL to its `projects` list to create a clickable card.
+This Jekyll theme implements `collections` to let you break up your work into categories. Projects appear beneath Achievements on the main page. Edit the `projects` list in [\_pages/about.md](_pages/about.md), adding a title, description, and URL for each project.
 
 You can easily create your own collections, apps, short stories, courses, or whatever your creative work is. To do this, edit the collections in the [\_config.yml](_config.yml) file, create a corresponding folder, and create a landing page for your collection, similar to `_pages/teaching.md`.
 

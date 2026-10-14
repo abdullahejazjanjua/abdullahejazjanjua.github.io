@@ -95,6 +95,25 @@ layout: default
       </section>
     {% endif %}
 
+    {% if page.projects and page.projects.size > 0 %}
+      <section class="project-section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <ul class="project-showcase">
+          {% for project in page.projects %}
+            <li>
+              <a class="showcase-card" href="{{ project.url | relative_url | escape }}">
+                <div class="showcase-heading">
+                  <h3 class="showcase-title">{{ project.title | escape }}</h3>
+                  <span class="showcase-destination">view project <span aria-hidden="true">↗</span></span>
+                </div>
+                <p class="showcase-description">{{ project.description | escape }}</p>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>

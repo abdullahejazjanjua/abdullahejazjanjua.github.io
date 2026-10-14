@@ -389,6 +389,87 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.project-section {
+  margin-top: 2.5rem;
+
+  > h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .project-showcase {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--global-rule-color);
+
+    > li {
+      min-width: 0;
+      border-bottom: 1px solid var(--global-rule-color);
+    }
+  }
+
+  .showcase-card {
+    display: block;
+    padding: 1.25rem 0;
+    color: var(--global-text-color);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: none;
+
+      .showcase-title,
+      .showcase-destination {
+        color: var(--global-hover-color);
+      }
+    }
+  }
+
+  .showcase-title {
+    margin: 0;
+    color: var(--global-theme-color);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .showcase-description {
+    margin: 0.5rem 0 0;
+    max-width: 46rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  .showcase-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .showcase-destination {
+    flex-shrink: 0;
+    color: var(--global-theme-color);
+    font-size: 0.8125rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-section .showcase-heading {
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+}
+
 @media (max-width: 700px) {
   .about-page {
     .about-intro {

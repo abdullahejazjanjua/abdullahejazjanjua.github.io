@@ -158,11 +158,11 @@ npx prettier . --write
 
 ### 7. Projects
 
-**Files:** `_pages/projects.md`
+**Files:** `_pages/about.md`
 
 - Add entries to the `projects` list with title, description, and url
 - Cards appear in list order and link directly to each project's URL
-- Page settings, card markup, and styles are in the same Markdown file
+- Projects appear beneath Achievements on the main page; the template handles markup and styles
 
 ### 8. News/Announcements
 
@@ -469,24 +469,24 @@ Help users avoid these frequent errors:
 
 ## Quick Reference Map
 
-| User wants to...        | Files to modify                             | Key documentation                 |
-| ----------------------- | ------------------------------------------- | --------------------------------- |
-| Change personal info    | `_config.yml`, `_pages/about.md`            | CUSTOMIZE.md § Configuration      |
-| Add profile picture     | `assets/img/prof_pic.jpg`                   | CUSTOMIZE.md § About page         |
+| User wants to...        | Files to modify                            | Key documentation                 |
+| ----------------------- | ------------------------------------------ | --------------------------------- |
+| Change personal info    | `_config.yml`, `_pages/about.md`           | CUSTOMIZE.md § Configuration      |
+| Add profile picture     | `assets/img/prof_pic.jpg`                  | CUSTOMIZE.md § About page         |
 | Update CV               | `assets/pdf/curriculum-vitae.pdf`          | CUSTOMIZE.md § CV information     |
-| Add publications        | `_bibliography/papers.bib`                  | CUSTOMIZE.md § Publications       |
-| Add blog post           | `_posts/YYYY-MM-DD-title.md`                | CUSTOMIZE.md § Blog posts         |
-| Create project          | `_pages/projects.md`                        | CUSTOMIZE.md § Projects           |
-| Add news item           | `_news/announcement.md`                     | CUSTOMIZE.md § News               |
-| Change theme color      | `_sass/_themes.scss`                        | CUSTOMIZE.md § Theme colors       |
-| Add social links        | `_data/socials.yml`                         | CUSTOMIZE.md § Social media       |
-| Enable/disable features | `_config.yml`                               | CUSTOMIZE.md § Configuration      |
-| Remove pages            | Delete from `_pages/`, update nav           | CUSTOMIZE.md § Removing content   |
-| Fix deployment issues   | `_config.yml` (url/baseurl)                 | FAQ.md, INSTALL.md                |
-| Test changes locally    | Docker setup                                | INSTALL.md § Docker               |
-| Debug broken site       | Check GitHub Actions, local preview output  | FAQ.md, Testing Before Deployment |
-| Add custom page         | Create `_pages/name.md`, update nav         | CUSTOMIZE.md § Creating pages     |
-| Customize fonts/spacing | `_sass/_variables.scss`                     | CUSTOMIZE.md § Customization      |
+| Add publications        | `_bibliography/papers.bib`                 | CUSTOMIZE.md § Publications       |
+| Add blog post           | `_posts/YYYY-MM-DD-title.md`               | CUSTOMIZE.md § Blog posts         |
+| Create project          | `_pages/about.md`                          | CUSTOMIZE.md § Projects           |
+| Add news item           | `_news/announcement.md`                    | CUSTOMIZE.md § News               |
+| Change theme color      | `_sass/_themes.scss`                       | CUSTOMIZE.md § Theme colors       |
+| Add social links        | `_data/socials.yml`                        | CUSTOMIZE.md § Social media       |
+| Enable/disable features | `_config.yml`                              | CUSTOMIZE.md § Configuration      |
+| Remove pages            | Delete from `_pages/`, update nav          | CUSTOMIZE.md § Removing content   |
+| Fix deployment issues   | `_config.yml` (url/baseurl)                | FAQ.md, INSTALL.md                |
+| Test changes locally    | Docker setup                               | INSTALL.md § Docker               |
+| Debug broken site       | Check GitHub Actions, local preview output | FAQ.md, Testing Before Deployment |
+| Add custom page         | Create `_pages/name.md`, update nav        | CUSTOMIZE.md § Creating pages     |
+| Customize fonts/spacing | `_sass/_variables.scss`                    | CUSTOMIZE.md § Customization      |
 
 ## Using Community Context in Your Responses
 

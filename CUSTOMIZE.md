@@ -55,7 +55,7 @@ Here we will give you some tips on how to customize the website. One important t
   - [Removing content](#removing-content)
     - [Removing the blog page](#removing-the-blog-page)
     - [Removing the news section](#removing-the-news-section)
-    - [Removing the projects page](#removing-the-projects-page)
+    - [Removing the Projects section](#removing-the-projects-section)
     - [Removing the publications page](#removing-the-publications-page)
     - [Removing the repositories page](#removing-the-repositories-page)
     - [You can also remove pages through commenting out front-matter blocks](#you-can-also-remove-pages-through-commenting-out-front-matter-blocks)
@@ -317,7 +317,7 @@ Note that `posts` is also a collection, but it is a default collection created a
 
 ## Creating new projects
 
-Edit the `projects` list at the top of [\_pages/projects.md](_pages/projects.md). Each entry creates a small clickable card, and cards appear in the order listed:
+Edit the `projects` list at the top of [\_pages/about.md](_pages/about.md). Each entry creates a clickable project entry beneath Achievements on the main page, in the order listed:
 
 ```yaml
 - title: My Project
@@ -325,7 +325,9 @@ Edit the `projects` list at the top of [\_pages/projects.md](_pages/projects.md)
   url: https://github.com/your-username/your-project
 ```
 
-The same Markdown file contains the page title, navigation settings, card markup, and styles. Use a full URL for external projects or a root-relative path for a page on this site.
+All project content is edited in the same Markdown file as your biography and achievements. Use a full URL for external projects or a root-relative path for a page on this site; the template handles the layout automatically.
+
+The advisor names in the biography and achievements use Markdown links such as `[Dr. Junfeng Wen](#)`. Replace `#` with the advisor's profile URL to set the destination.
 
 ## Adding some news
 
@@ -333,7 +335,7 @@ You can add news in the about page by adding new Markdown files in the [\_news](
 
 ## Adding Collections
 
-This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories. The theme comes with three default collections: `news`, `projects`, and `books`. The Projects page uses its own list in [\_pages/projects.md](_pages/projects.md), independently of the `projects` collection.
+This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories. The theme comes with three default collections: `news`, `projects`, and `books`. The main page's Projects section uses its own list in [\_pages/about.md](_pages/about.md), independently of the `projects` collection.
 
 You can easily create your own collections for any type of content—teaching materials, courses, apps, short stories, or whatever suits your needs.
 
@@ -762,19 +764,9 @@ To remove the news section, you can:
 - remove the `announcements` part in [\_pages/about.md](_pages/about.md)
 - remove the news part in the `Collections` section in the [\_config.yml](_config.yml) file
 
-### Removing the projects page
+### Removing the Projects section
 
-To remove the projects, you can:
-
-- delete the [\_projects](_projects/) directory
-- delete the Projects page [\_pages/projects.md](_pages/projects.md)
-- remove reference to projects page in our [\_pages/dropdown.md](_pages/dropdown.md)
-- remove projects part in the `Collections` section in the [\_config.yml](_config.yml) file
-
-You can also:
-
-- delete [\_includes/projects_horizontal.liquid](_includes/projects_horizontal.liquid)
-- delete [\_includes/projects.liquid](_includes/projects.liquid)
+Remove the `projects` list from [\_pages/about.md](_pages/about.md), or set it to `projects: []`. The section is hidden automatically when the list is empty.
 
 ### Removing the publications page
 
