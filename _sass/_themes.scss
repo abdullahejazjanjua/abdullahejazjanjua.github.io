@@ -3,42 +3,42 @@
  ******************************************************************************/
 
 :root {
-  // Tokyo Night Light: https://github.com/enkia/tokyo-night-vscode-theme
+  // Minimalist light palette.
   color-scheme: light;
-  --global-bg-color: #e6e7ed;
-  --global-code-bg-color: #dcdee3;
-  --global-text-color: #343b58;
-  --global-text-color-light: #565a6e;
-  --global-theme-color: #34548a;
-  --global-hover-color: #0f4b6e;
-  --global-accent-color: #5a4a78;
-  --global-rule-color: #c4c8da;
-  --global-hover-text-color: #e6e7ed;
-  --global-footer-bg-color: #e6e7ed;
-  --global-footer-text-color: #343b58;
-  --global-footer-link-color: #34548a;
-  --global-distill-app-color: #5a607d;
-  --global-divider-color: #acb0bf;
-  --global-card-bg-color: #dcdee3;
-  --global-highlight-color: #8c4351;
-  --global-back-to-top-bg-color: #2959aa;
-  --global-back-to-top-text-color: #e6e7ed;
-  --global-newsletter-bg-color: #dcdee3;
-  --global-newsletter-text-color: #343b58;
-  --global-selection-bg-color: #acb0bf;
+  --global-bg-color: #ffffff;
+  --global-code-bg-color: #f3f3f3;
+  --global-text-color: #222222;
+  --global-text-color-light: #666666;
+  --global-theme-color: #333333;
+  --global-hover-color: #000000;
+  --global-accent-color: #666666;
+  --global-rule-color: #e5e5e5;
+  --global-hover-text-color: #ffffff;
+  --global-footer-bg-color: #ffffff;
+  --global-footer-text-color: #666666;
+  --global-footer-link-color: #333333;
+  --global-distill-app-color: #666666;
+  --global-divider-color: #d4d4d4;
+  --global-card-bg-color: #fafafa;
+  --global-highlight-color: #b91c1c;
+  --global-back-to-top-bg-color: #333333;
+  --global-back-to-top-text-color: #ffffff;
+  --global-newsletter-bg-color: #fafafa;
+  --global-newsletter-text-color: #222222;
+  --global-selection-bg-color: #dddddd;
 
-  --global-tip-block: #33635c;
-  --global-tip-block-bg: #d6e2de;
-  --global-tip-block-text: #343b58;
-  --global-tip-block-title: #33635c;
-  --global-warning-block: #8f5e15;
-  --global-warning-block-bg: #e7e8c8;
-  --global-warning-block-text: #343b58;
-  --global-warning-block-title: #8f5e15;
-  --global-danger-block: #8c4351;
-  --global-danger-block-bg: #e8d6dc;
-  --global-danger-block-text: #343b58;
-  --global-danger-block-title: #8c4351;
+  --global-tip-block: #4b6b58;
+  --global-tip-block-bg: #f2f6f3;
+  --global-tip-block-text: #222222;
+  --global-tip-block-title: #4b6b58;
+  --global-warning-block: #7a6027;
+  --global-warning-block-bg: #faf7ef;
+  --global-warning-block-text: #222222;
+  --global-warning-block-title: #7a6027;
+  --global-danger-block: #b91c1c;
+  --global-danger-block-bg: #fdf2f2;
+  --global-danger-block-text: #222222;
+  --global-danger-block-title: #b91c1c;
 
   #light-toggle-system {
     padding-left: 10px;
@@ -74,42 +74,42 @@
 }
 
 html[data-theme="dark"] {
-  // Tokyo Night Storm: https://github.com/folke/tokyonight.nvim
+  // Minimalist dark palette.
   color-scheme: dark;
-  --global-bg-color: #24283b;
-  --global-code-bg-color: #1f2335;
-  --global-text-color: #c0caf5;
-  --global-text-color-light: #a9b1d6;
-  --global-theme-color: #7aa2f7;
-  --global-hover-color: #7dcfff;
-  --global-accent-color: #bb9af7;
-  --global-rule-color: #3b4261;
-  --global-hover-text-color: #1f2335;
-  --global-footer-bg-color: #24283b;
-  --global-footer-text-color: #a9b1d6;
-  --global-footer-link-color: #7aa2f7;
-  --global-distill-app-color: #a9b1d6;
-  --global-divider-color: #545c7e;
-  --global-card-bg-color: #292e42;
-  --global-highlight-color: #f7768e;
-  --global-back-to-top-bg-color: #7aa2f7;
-  --global-back-to-top-text-color: #1f2335;
-  --global-newsletter-bg-color: #1f2335;
-  --global-newsletter-text-color: #c0caf5;
-  --global-selection-bg-color: #394b70;
+  --global-bg-color: #181818;
+  --global-code-bg-color: #242424;
+  --global-text-color: #e8e8e8;
+  --global-text-color-light: #a3a3a3;
+  --global-theme-color: #dddddd;
+  --global-hover-color: #ffffff;
+  --global-accent-color: #aaaaaa;
+  --global-rule-color: #333333;
+  --global-hover-text-color: #181818;
+  --global-footer-bg-color: #181818;
+  --global-footer-text-color: #a3a3a3;
+  --global-footer-link-color: #dddddd;
+  --global-distill-app-color: #a3a3a3;
+  --global-divider-color: #404040;
+  --global-card-bg-color: #202020;
+  --global-highlight-color: #f08080;
+  --global-back-to-top-bg-color: #dddddd;
+  --global-back-to-top-text-color: #181818;
+  --global-newsletter-bg-color: #202020;
+  --global-newsletter-text-color: #e8e8e8;
+  --global-selection-bg-color: #444444;
 
-  --global-tip-block: #73daca;
-  --global-tip-block-bg: #1f353d;
-  --global-tip-block-text: #c0caf5;
-  --global-tip-block-title: #73daca;
-  --global-warning-block: #e0af68;
-  --global-warning-block-bg: #363343;
-  --global-warning-block-text: #c0caf5;
-  --global-warning-block-title: #e0af68;
-  --global-danger-block: #f7768e;
-  --global-danger-block-bg: #3b2b40;
-  --global-danger-block-text: #c0caf5;
-  --global-danger-block-title: #f7768e;
+  --global-tip-block: #a3b8aa;
+  --global-tip-block-bg: #202923;
+  --global-tip-block-text: #e8e8e8;
+  --global-tip-block-title: #a3b8aa;
+  --global-warning-block: #c4b58a;
+  --global-warning-block-bg: #29261f;
+  --global-warning-block-text: #e8e8e8;
+  --global-warning-block-title: #c4b58a;
+  --global-danger-block: #f08080;
+  --global-danger-block-bg: #2b2020;
+  --global-danger-block-text: #e8e8e8;
+  --global-danger-block-title: #f08080;
 
   .only-light {
     display: none;
