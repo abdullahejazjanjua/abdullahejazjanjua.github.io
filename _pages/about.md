@@ -12,6 +12,8 @@ profile:
   role: Computer Science Undergraduate
   location: GIKI, Pakistan
   location_url: https://giki.edu.pk
+  github_url: https://github.com/abdullahejazjanjua
+  linkedin_url: https://www.linkedin.com/in/abdullah-ejaz-janjua/
 
 selected_papers: False # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -22,7 +24,7 @@ achievements:
   - title: Mitacs Globalink Research Internship
     year: "2026"
     description: >-
-      Selected for the competitive, fully funded Mitacs Globalink Research Internship to conduct research on diffusion models and subject personalization at Carleton University, Canada, under [Dr. Junfeng Wen](#).
+      Selected for the competitive, fully funded, **three-month** Mitacs Globalink Research Internship, receiving an award of **CAD 9,000** to conduct research on diffusion models and subject personalization at Carleton University, Canada, under [Dr. Junfeng Wen](#).
   - title: Deans Honor Roll
     year: "2023–present"
     description: >-

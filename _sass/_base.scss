@@ -284,36 +284,60 @@ ul.task-list input[type="checkbox"] {
     }
 
     .profile-details {
-      padding: 1rem;
-      border-top: 1px solid var(--global-rule-color);
+      padding: 0.75rem 1rem 1.25rem;
       font-size: 0.875rem;
       line-height: 1.6;
       overflow-wrap: anywhere;
     }
 
-    .profile-role {
-      margin: 0 0 1rem;
-      font-size: 0.9375rem;
+    .profile-name {
+      margin: 0 0 0.625rem;
+      font-family: "Roboto Slab", Georgia, "Times New Roman", serif;
+      font-size: 1.375rem;
       font-weight: 500;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+    }
+
+    .profile-role {
+      margin: 0;
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
       line-height: 1.5;
     }
 
+    .profile-affiliation {
+      margin: 0.25rem 0 0;
+      color: var(--global-text-color-light);
+      font-size: 0.8125rem;
+    }
+
     .profile-contact {
-      margin: 0;
+      display: grid;
+      gap: 0.75rem;
+      margin: 1rem 0 0;
+      padding: 1rem 0 0;
+      border-top: 1px solid var(--global-rule-color);
+      list-style: none;
+    }
 
-      > div + div {
-        margin-top: 0.875rem;
-      }
+    .profile-contact-link {
+      display: grid;
+      grid-template-columns: 1rem minmax(0, 1fr);
+      align-items: baseline;
+      gap: 0.625rem;
+      font-size: 0.8125rem;
+      line-height: 1.6;
 
-      dt {
-        margin-bottom: 0.125rem;
+      i {
         color: var(--global-text-color-light);
-        font-size: 0.75rem;
-        font-weight: 500;
+        text-align: center;
       }
 
-      dd {
-        margin: 0;
+      span {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
       }
     }
   }
