@@ -601,19 +601,19 @@ The `year` field also accepts date ranges such as `"2023–present"`. All achiev
 
 ## Editing the profile card
 
-Edit `profile` in [\_pages/about.md](_pages/about.md) to update the portrait, academic role, and affiliation:
+Edit `profile` in [\_pages/about.md](_pages/about.md) to update the circular portrait and social profile links:
 
 ```yaml
 profile:
   image: profile_pic.png
   image_alt: Portrait of Abdullah Ejaz Janjua
-  image_circular: false
-  role: Computer Science Undergraduate
-  location: GIKI, Pakistan
-  location_url: https://giki.edu.pk
+  image_circular: true
+  image_position: 35% 30%
+  github_url: https://github.com/abdullahejazjanjua
+  linkedin_url: https://www.linkedin.com/in/abdullah-ejaz-janjua/
 ```
 
-The image is loaded from `assets/img/`. The role is optional, and the email address comes from `email` in [\_data/socials.yml](_data/socials.yml). The card formatting is handled automatically; no HTML or CSS edits are needed.
+The image is loaded from `assets/img/`. Adjust `image_position` to reposition the circular crop without editing the image file. The email address comes from `email` in [\_data/socials.yml](_data/socials.yml), and the displayed name comes from [\_config.yml](_config.yml) unless `profile.name` is set. The compact card is vertically centered beside the biography on desktop; no HTML or CSS edits are needed.
 
 ## Managing publication display
 

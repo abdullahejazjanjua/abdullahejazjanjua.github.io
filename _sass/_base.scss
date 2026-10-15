@@ -261,6 +261,7 @@ ul.task-list input[type="checkbox"] {
   .about-profile {
     grid-column: 2;
     grid-row: 1;
+    align-self: center;
     width: 100%;
     min-width: 0;
 
@@ -272,19 +273,32 @@ ul.task-list input[type="checkbox"] {
     }
 
     .profile-portrait {
-      padding: 0.625rem;
+      padding: 1rem 1rem 0.5rem;
 
       figure {
-        margin: 0;
+        width: 100%;
+        max-width: 160px;
+        aspect-ratio: 1;
+        margin: 0 auto;
+      }
+
+      picture {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
 
       img {
         display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: var(--profile-image-position);
       }
     }
 
     .profile-details {
-      padding: 0.75rem 1rem 1.25rem;
+      padding: 0.5rem 1rem 1rem;
       font-size: 0.875rem;
       line-height: 1.6;
       overflow-wrap: anywhere;
@@ -299,24 +313,11 @@ ul.task-list input[type="checkbox"] {
       line-height: 1.3;
     }
 
-    .profile-role {
-      margin: 0;
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      line-height: 1.5;
-    }
-
-    .profile-affiliation {
-      margin: 0.25rem 0 0;
-      color: var(--global-text-color-light);
-      font-size: 0.8125rem;
-    }
-
     .profile-contact {
       display: grid;
-      gap: 0.75rem;
-      margin: 1rem 0 0;
-      padding: 1rem 0 0;
+      gap: 0.5rem;
+      margin: 0.75rem 0 0;
+      padding: 0.75rem 0 0;
       border-top: 1px solid var(--global-rule-color);
       list-style: none;
     }

@@ -8,10 +8,8 @@ profile:
   align: right
   image: profile_pic.png
   image_alt: Portrait of Abdullah Ejaz Janjua
-  image_circular: false # crops the image to make it circular
-  role: Computer Science Undergraduate
-  location: GIKI, Pakistan
-  location_url: https://giki.edu.pk
+  image_circular: true
+  image_position: 35% 30% # adjusts the portrait crop without changing the source image
   github_url: https://github.com/abdullahejazjanjua
   linkedin_url: https://www.linkedin.com/in/abdullah-ejaz-janjua/
 

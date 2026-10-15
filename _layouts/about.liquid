@@ -27,8 +27,8 @@ layout: default
               {% else %}
                 {% assign profile_image_class = 'img-fluid rounded' %}
               {% endif %}
-              {% capture sizes %}(min-width: 701px) 218px, (max-width: 280px) 80vw, 218px{% endcapture %}
-              <div class="profile-portrait">
+              {% capture sizes %}(max-width: 200px) 80vw, 160px{% endcapture %}
+              <div class="profile-portrait" style="--profile-image-position: {{ page.profile.image_position | default: '50% 50%' | escape }};">
                 {%
                   include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile_image_alt
                   cache_bust=true
@@ -38,12 +38,6 @@ layout: default
             <div class="profile-details">
               {% capture profile_full_name %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endcapture %}
               <h2 class="profile-name" id="profile-name">{{ page.profile.name | default: profile_full_name | strip | escape }}</h2>
-              {% if page.profile.role %}
-                <p class="profile-role">{{ page.profile.role | escape }}</p>
-              {% endif %}
-              {% if page.profile.location %}
-                <p class="profile-affiliation">{{ page.profile.location | escape }}</p>
-              {% endif %}
               <ul class="profile-contact" aria-label="Contact links">
                 {% if site.data.socials.email %}
                   <li>
@@ -54,18 +48,6 @@ layout: default
                     >
                       <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                       <span>{{ site.data.socials.email | escape }}</span>
-                    </a>
-                  </li>
-                {% endif %}
-                {% if page.profile.location and page.profile.location_url %}
-                  <li>
-                    <a
-                      class="profile-contact-link"
-                      href="{{ page.profile.location_url | escape }}"
-                      aria-label="Affiliation: {{ page.profile.location | escape }}"
-                    >
-                      <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
-                      <span>{{ page.profile.location | escape }}</span>
                     </a>
                   </li>
                 {% endif %}
